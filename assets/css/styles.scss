@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+$section-padding: 11rem;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Rajdhani", sans-serif;
+  color: #fff;
+}
+
+body {
+  background: #151515;
+}
+
+h1 {
+  font-size: 108px;
+}
+
+h2 {
+  font-size: 68px;
+}
+
+section {
+  padding-left: $section-padding;
+  padding-right: $section-padding;
+}
+
+hr {
+  border: 0;
+  border-top: 5px solid #fe7800;
+  margin-bottom: 2rem;
+}
+
+#navbar {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+
+  * {
+    font-size: 28px;
+    font-weight: bold;
+
+    @media screen and (max-width: 1570px) {
+      font-size: 24px;
+    }
+  }
+
+  .logo {
+    max-width: 349px;
+
+    @media screen and (max-width: 1570px) {
+      max-width: 250px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      margin-right: 1rem;
+    }
+  }
+
+  .account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+#servers {
+  position: relative;
+  padding-top: 3rem;
+  background-image: url("../vectors/bg-game-servers.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1588px;
+  background-position-y: -40px;
+  background-position-x: 161px;
+
+  img.dots-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  hr.imgs-top {
+    margin: 1rem 0;
+    margin-left: -$section-padding;
+    max-width: 1271px;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1560px;
+
+    img {
+      max-width: 481px;
+      margin-top: 3rem;
+      margin-left: 3rem;
+      border-radius: 8px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @media screen {
+      }
+    }
+  }
+
+  hr.imgs-bottom {
+    margin-top: 5rem;
+    margin-right: -$section-padding;
+  }
+
+  .fivem {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    .content {
+      max-width: 1264px;
+      .desc {
+        font-size: 30px;
+        text-align: right;
+      }
+    }
+
+    .logo {
+      max-width: 248px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  img.dots-bottom-left {
+    position: absolute;
+    left: -108px;
+    bottom: -60px;
+  }
+}
