@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 :root {
-  --section-padding: 11rem;
+  --section-padding: 10rem;
+  --align-margin: -10rem;
 }
 
 @media screen and (max-width: 1600px) {
   :root {
     --section-padding: 8rem;
+    --align-margin: -8rem;
   }
 }
 
@@ -163,6 +165,87 @@ hr {
   margin-right: 0.5rem;
 }
 
+#hero {
+  position: relative;
+  text-align: center;
+  height: 50vw;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hero .main-heading {
+  position: relative;
+  font-size: 89px;
+}
+
+#hero .main-heading::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 1.25rem;
+  height: 3px;
+  background-color: #fe7800;
+  width: 60%;
+}
+
+#hero .sub-heading {
+  font-size: 36px;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+}
+
+#hero .btns-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .btns-container .btn {
+  width: 194px;
+  font-size: 23px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#hero .mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#hero.landing {
+  background-image: url("../images/bg-squad-server-landing-with-gradient.png");
+}
+
+#hero.landing .main-heading::after {
+  top: 0;
+  bottom: unset;
+  width: 22%;
+}
+
 #servers {
   position: relative;
   padding-top: 3rem;
@@ -182,42 +265,13 @@ hr {
 
 #servers hr.imgs-top {
   margin: 1rem 0;
-  margin-left: -var(--section-padding);
+  margin-left: var(--align-margin);
   max-width: 1271px;
-}
-
-#servers .img-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1560px;
-}
-
-#servers .img-container .item {
-  max-width: 481px;
-  margin-top: 3rem;
-  margin-left: 3rem;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-#servers .img-container .item img {
-  width: 100%;
-}
-
-#servers .img-container .item img:first-child {
-  margin-left: 0;
 }
 
 #servers hr.imgs-bottom {
   margin-top: 5rem;
-  margin-right: -var(--section-padding);
+  margin-right: var(--align-margin);
 }
 
 #fivem {
@@ -278,7 +332,7 @@ hr {
 }
 
 #blogs hr {
-  margin-left: -var(--section-padding);
+  margin-left: var(--align-margin);
   max-width: 470px;
 }
 
@@ -411,6 +465,280 @@ hr {
 #locations .map {
   max-width: 1507px;
   width: 100%;
+}
+
+#hero.game-server {
+  background-image: url("../images/bg-game-server-hosting-with-gradient.png");
+}
+
+#game-servers {
+  position: relative;
+  background-image: url("../images/bg-game-servers-page.png");
+  background-size: 1860px;
+}
+
+#game-servers .dots-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#game-servers .dots-bottom-left {
+  position: absolute;
+  bottom: -190px;
+  left: 0;
+}
+
+#game-servers hr {
+  margin-left: var(--align-margin);
+  max-width: 844px;
+}
+
+#reviews {
+  position: relative;
+}
+
+#reviews .vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 22rem;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-left: 6px dashed #fe7800;
+  height: 75%;
+}
+
+#reviews hr {
+  margin-left: var(--align-margin);
+  max-width: 576px;
+}
+
+#reviews .reviews {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reviews .reviews .item {
+  position: relative;
+  max-width: 482px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 1.5rem 3.5rem;
+  margin-right: 0;
+  margin-left: auto;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+#reviews .reviews .item::before {
+  content: "";
+  position: absolute;
+  background: #fe7800;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #151515;
+  outline: 3px solid #fff;
+  top: 0;
+  left: -10rem;
+  right: unset;
+}
+
+#reviews .reviews .item:nth-child(2n + 1) {
+  text-align: right;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+#reviews .reviews .item:nth-child(2n + 1)::before {
+  right: -10rem;
+  left: unset;
+}
+
+#reviews .reviews .item .name {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fe7800;
+}
+
+#reviews .reviews .item .content {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fe7800;
+}
+
+#reviews .reviews .item .rating {
+  margin-top: 0.5rem;
+}
+
+#faq .heading {
+  text-align: center;
+}
+
+#faq .heading .underline {
+  border-bottom: 5px solid #fe7800;
+}
+
+#faq .qas {
+  margin-top: 3rem;
+}
+
+#faq .qas .item {
+  margin: 2rem 0;
+}
+
+#faq .qas .item .question {
+  font-size: 48px;
+  position: relative;
+}
+
+#faq .qas .item .question::after {
+  position: absolute;
+  right: 0;
+  content: url("../images/question-toggler.png");
+}
+
+#faq .qas .item .answer {
+  background-color: #fe7800;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  font-weight: 600;
+}
+
+#hero.fivem-server {
+  background-image: url("../images/bg-fivem-server-hosting-with-gradient.png");
+}
+
+#payment-plans {
+  position: relative;
+}
+
+#payment-plans .dots-top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#payment-plans hr {
+  margin-left: var(--align-margin);
+  max-width: 903px;
+}
+
+#payment-plans .plans .plan {
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  position: relative;
+  max-width: 352px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #000;
+  background-color: #fe7800;
+}
+
+#payment-plans .plans .plan::after {
+  position: absolute;
+  content: "";
+  bottom: -279px;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(50% 31%, 0 0, 100% 0);
+          clip-path: polygon(50% 31%, 0 0, 100% 0);
+  height: 280px;
+  background-color: #fe7800;
+}
+
+#payment-plans .plans .plan .plan-img {
+  position: absolute;
+  background: #fff;
+  width: 218px;
+  left: 50%;
+  top: -4rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 80px;
+}
+
+#payment-plans .plans .plan .plan-img::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: #fff 2px solid;
+  border-radius: 80px;
+}
+
+#payment-plans .plans .plan .plan-body {
+  padding: 6rem 2.5rem 1.2rem;
+}
+
+#payment-plans .plans .plan .plan-body .name {
+  font-size: 33px;
+}
+
+#payment-plans .plans .plan .plan-body .specs {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+#payment-plans .plans .plan .plan-body .specs .item {
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+#payment-plans .plans .plan .plan-body .btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  padding: 0.75rem 1.75rem;
+}
+
+#fivem.fivem-hosting {
+  background-image: url("../images/bg-fivem-hosting-white.png");
+  background-color: #fe7800;
+}
+
+#know-fivem .img img {
+  width: 100%;
+}
+
+#know-fivem .text {
+  font-size: 35px;
+  padding: 1em 0 1rem;
+}
+
+#locations.fivem-hosting {
+  background: unset;
+}
+
+#help {
+  padding-top: 2rem;
+  background-image: url("../images/bg-need-help.png");
+  background-size: 1596px;
+  background-position-x: 162px;
+  background-repeat: no-repeat;
+}
+
+#help .main-heading {
+  font-size: 86px;
+}
+
+#help .text {
+  margin-right: 3rem;
+}
+
+#help .text .heading {
+  font-size: 76px;
+}
+
+#help .text .para {
+  font-size: 35px;
+  margin-bottom: 3rem;
 }
 
 #footer .navbar {

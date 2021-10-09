@@ -2,7 +2,7 @@
   color: #ff7e00 !important;
 }
 
-.btn {
+.btn.outlined {
   color: #d86b00;
   background: #fff;
   border-radius: 50px;
@@ -18,4 +18,77 @@
   color: #fff !important;
   border-color: #fff;
   outline-color: #ff7e00;
+}
+
+.btn.primary-inverted {
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
+  border-color: #000;
+  outline-color: #fff;
+  outline-width: 1px;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 1560px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-container .item {
+  flex-basis: 33.33%;
+  max-width: 481px;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 33%;
+  margin-left: 0;
+  padding: 2rem 1.5rem;
+  margin: 0;
+}
+
+.img-container .item img {
+  width: 100%;
+}
+
+.img-container .item img:first-child {
+  margin-left: 0;
+}
+
+.heading-underlined {
+  display: flex;
+}
+
+.heading-underlined.start {
+  justify-content: flex-start;
+}
+
+.heading-underlined.end {
+  justify-content: flex-end;
+}
+
+.heading-underlined h1 {
+  margin-bottom: 5rem;
+  border-bottom: 4px solid #fe7800;
+  display: inline-block;
+}
+
+.heading-underlined.end h1 {
+  padding-right: var(--section-padding);
+  margin-right: var(--align-margin);
+}
+
+.heading-underlined.start h1 {
+  padding-left: var(--section-padding);
+  margin-left: var(--align-margin);
 }

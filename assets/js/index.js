@@ -31,6 +31,8 @@ $("#blog-slider").slick({
   ],
 });
 
+$("#main-slider").slick();
+
 $("#blog-slider").on("setPosition", function () {
   $(".slick-active").each(function (i, el) {
     $(this).css("transform", "scale(1.0)");
