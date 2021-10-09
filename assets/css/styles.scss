@@ -227,6 +227,7 @@ hr {
 }
 
 #fivem {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -262,7 +263,7 @@ hr {
   img.dots-bottom-left {
     position: absolute;
     left: -61px;
-    bottom: -321px;
+    bottom: -50px;
   }
 }
 
@@ -333,15 +334,16 @@ hr {
   position: relative;
   padding: 0;
   background: $primary-color-light;
+  top: -1px;
 
   &::before {
-    position: absolute;
-    content: "";
-    background-color: $primary-dark;
-    top: -1px;
-    height: 605px;
-    width: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 15%, 8% 15%);
+    // position: absolute;
+    // content: "";
+    // background-color: $primary-dark;
+    // top: -2px;
+    // height: 605px;
+    // width: 100%;
+    // clip-path: polygon(0 0, 100% 0, 100% 15%, 8% 15%);
   }
 
   .text-bg {
@@ -350,9 +352,9 @@ hr {
     background-repeat: no-repeat;
     background-position-y: 120px;
     background-position-x: 175px;
-
     .img-bg {
-      background-image: url("../images/bg-best-games_img\ -\ Copy.png");
+      background-image: url("../images/bg-best-games_img__4.png");
+      // background-image: url("../images/bg-best-games_img\ -\ Copy.png");
       background-repeat: no-repeat;
       padding-top: 15rem;
       padding-bottom: 7rem;
@@ -388,6 +390,8 @@ hr {
 }
 
 #locations {
+  position: relative;
+  top: -2px;
   background: $primary-color-light;
 
   .map {

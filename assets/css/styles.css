@@ -274,6 +274,7 @@ hr {
 }
 
 #fivem {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +324,7 @@ hr {
 #fivem img.dots-bottom-left {
   position: absolute;
   left: -61px;
-  bottom: -321px;
+  bottom: -50px;
 }
 
 #blogs {
@@ -396,17 +397,7 @@ hr {
   position: relative;
   padding: 0;
   background: #ff7e00;
-}
-
-#games::before {
-  position: absolute;
-  content: "";
-  background-color: #151515;
   top: -1px;
-  height: 605px;
-  width: 100%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 15%, 8% 15%);
-          clip-path: polygon(0 0, 100% 0, 100% 15%, 8% 15%);
 }
 
 #games .text-bg {
@@ -418,7 +409,7 @@ hr {
 }
 
 #games .text-bg .img-bg {
-  background-image: url("../images/bg-best-games_img - Copy.png");
+  background-image: url("../images/bg-best-games_img__4.png");
   background-repeat: no-repeat;
   padding-top: 15rem;
   padding-bottom: 7rem;
@@ -458,6 +449,8 @@ hr {
 }
 
 #locations {
+  position: relative;
+  top: -2px;
   background: #ff7e00;
 }
 
