@@ -77,27 +77,27 @@ hr {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1570px) {
+@media screen and (max-width: 1700px) {
   #navbar * {
     font-size: 24px;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   #navbar * {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1300px) {
   #navbar * {
     font-size: 18px;
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1190px) {
   #navbar * {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -105,27 +105,33 @@ hr {
   max-width: 349px;
 }
 
-@media screen and (max-width: 1570px) {
+@media screen and (max-width: 1700px) {
   #navbar .logo {
     max-width: 250px;
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   #navbar .logo {
     max-width: 200px;
   }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1300px) {
   #navbar .logo {
     max-width: 170px;
   }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1190px) {
   #navbar .logo {
     max-width: 110px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  #navbar .logo {
+    font-size: 16px;
   }
 }
 
@@ -200,10 +206,46 @@ hr {
   width: 60%;
 }
 
+@media screen and (max-width: 1370px) {
+  #hero .main-heading {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  #hero .main-heading {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #hero .main-heading {
+    font-size: 40px;
+  }
+}
+
 #hero .sub-heading {
   font-size: 36px;
   margin-bottom: 1.75rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1370px) {
+  #hero .sub-heading {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  #hero .sub-heading {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #hero .sub-heading {
+    font-size: 18px;
+  }
 }
 
 #hero .btns-container {
@@ -228,6 +270,32 @@ hr {
   padding-right: 0;
 }
 
+@media screen and (max-width: 1370px) {
+  #hero .btns-container .btn {
+    width: 175px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  #hero .btns-container .btn {
+    width: 165px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  #hero .btns-container {
+    max-width: 430px;
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  #hero .btns-container {
+    max-width: 380px;
+  }
+}
+
 #hero .mouse {
   position: absolute;
   left: 50%;
@@ -246,14 +314,19 @@ hr {
   width: 22%;
 }
 
+#hero.landing .sub-heading {
+  margin-top: -1rem;
+}
+
 #servers {
   border-top: 10px solid #fff;
   position: relative;
   padding-top: 3rem;
+  padding-bottom: 4rem;
   background-image: url("../vectors/bg-game-servers.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 1588px;
+  background-size: 77vw;
   background-position-y: -40px;
   background-position-x: 161px;
 }
@@ -268,11 +341,6 @@ hr {
   right: 0;
 }
 
-#servers hr.imgs-bottom {
-  margin-top: 5rem;
-  margin-right: var(--align-margin);
-}
-
 #fivem {
   position: relative;
   display: -webkit-box;
@@ -285,11 +353,22 @@ hr {
       align-content: center;
   background-image: url("../vectors/bg-fivem-server-hosting.svg");
   background-repeat: no-repeat;
-  background-size: 1588px;
-  background-position-y: -40px;
-  background-position-x: 161px;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  background-size: 86vw;
+  background-position-y: 0px;
+  background-position-x: 140px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+#fivem::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #fe7800;
+  width: 1830px;
 }
 
 #fivem .content {
@@ -344,7 +423,7 @@ hr {
 #blogs .cards-container .card {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   font-size: 36px;
   border-radius: 10px;
   overflow: hidden;
@@ -396,39 +475,28 @@ hr {
 #games {
   position: relative;
   padding: 0;
-  background: #ff7e00;
   top: -1px;
-}
-
-#games .text-bg {
-  background-image: url("../vectors/bg-best-games_text.svg");
-  background-size: 1226px;
+  background-image: url("../images/bg-best-games_img-with-overy-and-text.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 120px;
-  background-position-x: 175px;
-}
-
-#games .text-bg .img-bg {
-  background-image: url("../images/bg-best-games_img__4.png");
-  background-repeat: no-repeat;
-  padding-top: 15rem;
-  padding-bottom: 7rem;
+  padding-top: 18rem;
+  padding-bottom: 9rem;
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
 }
 
-#games .text-bg .img-bg .heading {
+#games .heading {
   font-size: 180px;
   line-height: 0.75;
 }
 
-#games .text-bg .img-bg .sub-heading {
+#games .sub-heading {
   font-weight: 500;
   font-size: 49px;
   text-align: right;
 }
 
-#games .text-bg .img-bg .offer {
+#games .offer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,15 +508,17 @@ hr {
           align-items: center;
 }
 
-#games .text-bg .img-bg .offer a {
+#games .offer a {
   padding: 1.25rem 2.25rem;
 }
 
-#games .text-bg .img-bg .offer .text {
+#games .offer .text {
   font-size: 96px;
 }
 
 #locations {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
   position: relative;
   top: -2px;
   background: #ff7e00;
@@ -464,6 +534,7 @@ hr {
 }
 
 #game-servers {
+  padding-top: 2rem;
   position: relative;
   background-image: url("../images/bg-game-servers-page.png");
   background-size: 1860px;
@@ -486,6 +557,43 @@ hr {
   max-width: 844px;
 }
 
+#realms-hosting-panel {
+  padding-top: 11rem;
+  padding-bottom: 8rem;
+  background-image: url("../images/bg-realms-hosting-with-color.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#realms-hosting-panel .heading {
+  text-align: right;
+  line-height: 0.7;
+}
+
+#realms-hosting-panel .sub-heading {
+  text-align: right;
+  font-size: 49px;
+  font-weight: 500;
+}
+
+#realms-hosting-panel .showcase {
+  margin-top: 4rem;
+}
+
+#realms-hosting-panel .showcase .btn {
+  display: block;
+  width: 327px;
+  font-size: 32px;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.pattern-bg {
+  background-image: url("../images/bg-reviews.png");
+  background-repeat: no-repeat;
+}
+
 #reviews {
   position: relative;
 }
@@ -493,7 +601,7 @@ hr {
 #reviews .vertical-line {
   position: absolute;
   left: 50%;
-  top: 22rem;
+  top: 21rem;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   border-left: 6px dashed #fe7800;
@@ -519,8 +627,12 @@ hr {
   padding: 1.5rem 3.5rem;
   margin-right: 0;
   margin-left: auto;
-  margin-top: 12rem;
+  margin-top: 5rem;
   margin-bottom: 12rem;
+}
+
+#reviews .reviews .item:first-of-type {
+  margin-bottom: 0;
 }
 
 #reviews .reviews .item::before {
@@ -564,8 +676,13 @@ hr {
   margin-top: 0.5rem;
 }
 
+#faq {
+  padding-bottom: 7rem;
+}
+
 #faq .heading {
   text-align: center;
+  margin-bottom: 6rem;
 }
 
 #faq .heading .underline {
@@ -577,18 +694,32 @@ hr {
 }
 
 #faq .qas .item {
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
 }
 
 #faq .qas .item .question {
   font-size: 48px;
   position: relative;
+  border-bottom: 8px solid transparent;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 #faq .qas .item .question::after {
   position: absolute;
   right: 0;
   content: url("../images/question-toggler.png");
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#faq .qas .item .question.close {
+  border-bottom-color: #fe7800;
+}
+
+#faq .qas .item .question.close::after {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 #faq .qas .item .answer {
@@ -596,25 +727,39 @@ hr {
   border-radius: 20px;
   padding: 2rem 3rem;
   font-weight: 600;
+  display: none;
+}
+
+#faq .qas .item .answer:first-of-type {
+  display: block;
 }
 
 #hero.fivem-server {
   background-image: url("../images/bg-fivem-server-hosting-with-gradient.png");
 }
 
+#hero.fivem-server .sub-heading {
+  margin-top: -0.5rem;
+}
+
 #payment-plans {
   position: relative;
+  padding-top: 3rem;
+  background-image: url("../images/bg-plans.png");
+  background-repeat: no-repeat;
+  background-position-x: 200px;
+  background-position-x: 120px;
+  background-position-y: 40px;
+}
+
+#payment-plans .heading {
+  margin-bottom: 2rem;
 }
 
 #payment-plans .dots-top-right {
   position: absolute;
   right: 0;
   top: 0;
-}
-
-#payment-plans hr {
-  margin-left: var(--align-margin);
-  max-width: 903px;
 }
 
 #payment-plans .plans .plan {
@@ -693,6 +838,30 @@ hr {
 #fivem.fivem-hosting {
   background-image: url("../images/bg-fivem-hosting-white.png");
   background-color: #fe7800;
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+  background-position-x: 150px;
+  background-position-y: 100px;
+}
+
+#fivem.fivem-hosting .top-line {
+  position: absolute;
+  top: -1px;
+  left: 0;
+}
+
+#fivem.fivem-hosting .bottom-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+#know-fivem {
+  padding-top: 3rem;
+}
+
+#know-fivem .heading {
+  margin-bottom: 4rem;
 }
 
 #know-fivem .img img {
@@ -706,14 +875,25 @@ hr {
 
 #locations.fivem-hosting {
   background: unset;
+  padding-top: 3rem;
+}
+
+#locations.fivem-hosting .heading {
+  margin-bottom: 7rem;
+}
+
+#realms-hosting-panel.fivem-server {
+  background-image: url("../images/bg-realms-hosting-with-light-color.png");
 }
 
 #help {
   padding-top: 2rem;
+  padding-bottom: 1rem;
   background-image: url("../images/bg-need-help.png");
   background-size: 1596px;
-  background-position-x: 162px;
+  background-position-x: 132px;
   background-repeat: no-repeat;
+  background-position-y: 80px;
 }
 
 #help .main-heading {
@@ -733,9 +913,92 @@ hr {
   margin-bottom: 3rem;
 }
 
+#help .btn {
+  width: 281px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+#footer {
+  position: relative;
+  background-color: #000;
+}
+
+#footer .line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: -6vw;
+}
+
 #footer .navbar {
   font-size: 28px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1700px) {
+  #footer .navbar {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #footer .navbar {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #footer .navbar {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  #footer .navbar {
+    font-size: 16px;
+  }
+}
+
+#footer .navbar .logo {
+  width: 349px;
+}
+
+@media screen and (max-width: 1700px) {
+  #footer .navbar .logo {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  #footer .navbar .logo {
+    width: 295px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #footer .navbar .logo {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #footer .navbar .logo {
+    width: 220px;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  #footer .navbar .logo {
+    width: 349px;
+  }
+}
+
+#footer .navbar .logo img {
+  width: 100%;
 }
 
 #footer .navbar .nav .nav-item {

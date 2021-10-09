@@ -70,40 +70,44 @@ hr {
     font-size: 28px;
     font-weight: bold;
 
-    @media screen and (max-width: 1570px) {
+    @media screen and (max-width: 1700px) {
       font-size: 24px;
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1440px) {
       font-size: 20px;
     }
 
-    @media screen and (max-width: 1170px) {
+    @media screen and (max-width: 1300px) {
       font-size: 18px;
     }
 
-    @media screen and (max-width: 1060px) {
-      font-size: 18px;
+    @media screen and (max-width: 1190px) {
+      font-size: 16px;
     }
   }
 
   .logo {
     max-width: 349px;
 
-    @media screen and (max-width: 1570px) {
+    @media screen and (max-width: 1700px) {
       max-width: 250px;
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1440px) {
       max-width: 200px;
     }
 
-    @media screen and (max-width: 1170px) {
+    @media screen and (max-width: 1300px) {
       max-width: 170px;
     }
 
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: 1190px) {
       max-width: 110px;
+    }
+
+    @media screen and (max-width: 1190px) {
+      font-size: 16px;
     }
 
     img {
@@ -155,12 +159,36 @@ hr {
       background-color: $primary-color-text;
       width: 60%;
     }
+
+    @media screen and (max-width: 1370px) {
+      font-size: 70px;
+    }
+
+    @media screen and (max-width: 1135px) {
+      font-size: 55px;
+    }
+
+    @media screen and (max-width: 940px) {
+      font-size: 40px;
+    }
   }
 
   .sub-heading {
     font-size: 36px;
     margin-bottom: 1.75rem;
     font-weight: 500;
+
+    @media screen and (max-width: 1370px) {
+      font-size: 29px;
+    }
+
+    @media screen and (max-width: 1135px) {
+      font-size: 23px;
+    }
+
+    @media screen and (max-width: 940px) {
+      font-size: 18px;
+    }
   }
 
   .btns-container {
@@ -176,6 +204,24 @@ hr {
       font-size: 23px;
       padding-left: 0;
       padding-right: 0;
+
+      @media screen and (max-width: 1370px) {
+        width: 175px;
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 1135px) {
+        width: 165px;
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 1370px) {
+      max-width: 430px;
+    }
+
+    @media screen and (max-width: 1135px) {
+      max-width: 380px;
     }
   }
 
@@ -197,16 +243,21 @@ hr {
     bottom: unset;
     width: 22%;
   }
+
+  .sub-heading {
+    margin-top: -1rem;
+  }
 }
 
 #servers {
   border-top: 10px solid #fff;
   position: relative;
   padding-top: 3rem;
+  padding-bottom: 4rem;
   background-image: url("../vectors/bg-game-servers.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 1588px;
+  background-size: 77vw;
   background-position-y: -40px;
   background-position-x: 161px;
 
@@ -219,11 +270,6 @@ hr {
     top: 0;
     right: 0;
   }
-
-  hr.imgs-bottom {
-    margin-top: 5rem;
-    margin-right: var(--align-margin);
-  }
 }
 
 #fivem {
@@ -233,11 +279,22 @@ hr {
   align-content: center;
   background-image: url("../vectors/bg-fivem-server-hosting.svg");
   background-repeat: no-repeat;
-  background-size: 1588px;
-  background-position-y: -40px;
-  background-position-x: 161px;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  background-size: 86vw;
+  background-position-y: 0px;
+  background-position-x: 140px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #fe7800;
+    width: 1830px;
+  }
 
   .content {
     max-width: 1264px;
@@ -282,7 +339,7 @@ hr {
     .card {
       padding-left: 2rem;
       padding-right: 2rem;
-      padding: 1rem 2rem;
+      padding: 0 2rem;
       font-size: 36px;
       border-radius: 10px;
       overflow: hidden;
@@ -333,63 +390,45 @@ hr {
 #games {
   position: relative;
   padding: 0;
-  background: $primary-color-light;
   top: -1px;
+  background-image: url("../images/bg-best-games_img-with-overy-and-text.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  &::before {
-    // position: absolute;
-    // content: "";
-    // background-color: $primary-dark;
-    // top: -2px;
-    // height: 605px;
-    // width: 100%;
-    // clip-path: polygon(0 0, 100% 0, 100% 15%, 8% 15%);
+  padding-top: 18rem;
+  padding-bottom: 9rem;
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+
+  .heading {
+    font-size: 180px;
+    line-height: 0.75;
   }
 
-  .text-bg {
-    background-image: url("../vectors/bg-best-games_text.svg");
-    background-size: 1226px;
-    background-repeat: no-repeat;
-    background-position-y: 120px;
-    background-position-x: 175px;
-    .img-bg {
-      background-image: url("../images/bg-best-games_img__4.png");
-      // background-image: url("../images/bg-best-games_img\ -\ Copy.png");
-      background-repeat: no-repeat;
-      padding-top: 15rem;
-      padding-bottom: 7rem;
-      padding-left: var(--section-padding);
-      padding-right: var(--section-padding);
+  .sub-heading {
+    font-weight: 500;
+    font-size: 49px;
+    text-align: right;
+  }
 
-      .heading {
-        font-size: 180px;
-        line-height: 0.75;
-      }
+  .offer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-      .sub-heading {
-        font-weight: 500;
-        font-size: 49px;
-        text-align: right;
-      }
+    a {
+      padding: 1.25rem 2.25rem;
+    }
 
-      .offer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        a {
-          padding: 1.25rem 2.25rem;
-        }
-
-        .text {
-          font-size: 96px;
-        }
-      }
+    .text {
+      font-size: 96px;
     }
   }
 }
 
 #locations {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
   position: relative;
   top: -2px;
   background: $primary-color-light;
@@ -407,6 +446,7 @@ hr {
 }
 
 #game-servers {
+  padding-top: 2rem;
   position: relative;
   background-image: url("../images/bg-game-servers-page.png");
   background-size: 1860px;
@@ -429,13 +469,50 @@ hr {
   }
 }
 
+#realms-hosting-panel {
+  padding-top: 11rem;
+  padding-bottom: 8rem;
+  background-image: url("../images/bg-realms-hosting-with-color.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .heading {
+    text-align: right;
+    line-height: 0.7;
+  }
+
+  .sub-heading {
+    text-align: right;
+    font-size: 49px;
+    font-weight: 500;
+  }
+
+  .showcase {
+    margin-top: 4rem;
+
+    .btn {
+      display: block;
+      width: 327px;
+      font-size: 32px;
+      text-align: center;
+      padding: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.pattern-bg {
+  background-image: url("../images/bg-reviews.png");
+  background-repeat: no-repeat;
+}
+
 #reviews {
   position: relative;
 
   .vertical-line {
     position: absolute;
     left: 50%;
-    top: 22rem;
+    top: 21rem;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     border-left: 6px dashed #fe7800;
@@ -460,8 +537,12 @@ hr {
       padding: 1.5rem 3.5rem;
       margin-right: 0;
       margin-left: auto;
-      margin-top: 12rem;
+      margin-top: 5rem;
       margin-bottom: 12rem;
+
+      &:first-of-type {
+        margin-bottom: 0;
+      }
 
       &::before {
         content: "";
@@ -508,8 +589,11 @@ hr {
 }
 
 #faq {
+  padding-bottom: 7rem;
+
   .heading {
     text-align: center;
+    margin-bottom: 6rem;
 
     .underline {
       border-bottom: 5px solid $primary-color-text;
@@ -520,16 +604,27 @@ hr {
     margin-top: 3rem;
 
     .item {
-      margin: 2rem 0;
+      margin: 2rem 0 4rem;
 
       .question {
         font-size: 48px;
         position: relative;
+        border-bottom: 8px solid transparent;
+        transition: 0.4s ease;
 
         &::after {
           position: absolute;
           right: 0;
           content: url("../images/question-toggler.png");
+          transition: 0.4s ease;
+        }
+
+        &.close {
+          border-bottom-color: $primary-color-text;
+
+          &::after {
+            transform: rotate(-90deg);
+          }
         }
       }
       .answer {
@@ -537,6 +632,11 @@ hr {
         border-radius: 20px;
         padding: 2rem 3rem;
         font-weight: 600;
+        display: none;
+
+        &:first-of-type {
+          display: block;
+        }
       }
     }
   }
@@ -546,20 +646,29 @@ hr {
 
 #hero.fivem-server {
   background-image: url("../images/bg-fivem-server-hosting-with-gradient.png");
+
+  .sub-heading {
+    margin-top: -0.5rem;
+  }
 }
 
 #payment-plans {
   position: relative;
+  padding-top: 3rem;
+  background-image: url("../images/bg-plans.png");
+  background-repeat: no-repeat;
+  background-position-x: 200px;
+  background-position-x: 120px;
+  background-position-y: 40px;
+
+  .heading {
+    margin-bottom: 2rem;
+  }
 
   .dots-top-right {
     position: absolute;
     right: 0;
     top: 0;
-  }
-
-  hr {
-    margin-left: var(--align-margin);
-    max-width: 903px;
   }
 
   .plans {
@@ -639,9 +748,30 @@ hr {
 #fivem.fivem-hosting {
   background-image: url("../images/bg-fivem-hosting-white.png");
   background-color: $primary-color-text;
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+  background-position-x: 150px;
+  background-position-y: 100px;
+
+  .top-line {
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+
+  .bottom-line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
 }
 
 #know-fivem {
+  padding-top: 3rem;
+
+  .heading {
+    margin-bottom: 4rem;
+  }
   .img {
     img {
       width: 100%;
@@ -656,14 +786,25 @@ hr {
 
 #locations.fivem-hosting {
   background: unset;
+  padding-top: 3rem;
+
+  .heading {
+    margin-bottom: 7rem;
+  }
+}
+
+#realms-hosting-panel.fivem-server {
+  background-image: url("../images/bg-realms-hosting-with-light-color.png");
 }
 
 #help {
   padding-top: 2rem;
+  padding-bottom: 1rem;
   background-image: url("../images/bg-need-help.png");
   background-size: 1596px;
-  background-position-x: 162px;
+  background-position-x: 132px;
   background-repeat: no-repeat;
+  background-position-y: 80px;
 
   .main-heading {
     font-size: 86px;
@@ -681,12 +822,75 @@ hr {
       margin-bottom: 3rem;
     }
   }
+
+  .btn {
+    width: 281px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
 }
 
 #footer {
+  position: relative;
+  background-color: #000;
+
+  .line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -6vw;
+  }
+
   .navbar {
     font-size: 28px;
     font-weight: bold;
+
+    @media screen and (max-width: 1700px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 1190px) {
+      font-size: 16px;
+    }
+
+    .logo {
+      width: 349px;
+
+      @media screen and (max-width: 1700px) {
+        width: 310px;
+      }
+
+      @media screen and (max-width: 1520px) {
+        width: 295px;
+      }
+
+      @media screen and (max-width: 1440px) {
+        width: 260px;
+      }
+
+      @media screen and (max-width: 1300px) {
+        width: 220px;
+      }
+
+      @media screen and (max-width: 1190px) {
+        width: 349px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
 
     .nav {
       .nav-item {
