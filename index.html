@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="./assets/css/bootstrap-utils.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./assets/css/utilities.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
@@ -39,25 +41,30 @@
       <hr class="imgs-top" />
 
       <div class="img-container">
-        <img src="./assets/images/game-server-1.png" alt="server-1" /><img
-          src="./assets/images/game-server-2.png"
-          alt="server-2"
-        /><img src="./assets/images/game-server-3.png" alt="server-3" />
+        <div class="item">
+          <img src="./assets/images/game-server-1.png" alt="server-1" />
+        </div>
+        <div class="item">
+          <img src="./assets/images/game-server-2.png" alt="server-2" />
+        </div>
+        <div class="item">
+          <img src="./assets/images/game-server-3.png" alt="server-3" />
+        </div>
       </div>
 
       <hr class="imgs-bottom" />
+    </section>
 
-      <div class="fivem">
-        <div class="content">
-          <h2 class="heading">BEST PERFORMACNE - FIVEM SERVER HOSTING</h2>
-          <p class="desc">
-            Here at Realms Hosting we have the best FiveM Server Hosting for the
-            most affordable prices! Don't like them? 48 hour money back!
-          </p>
-        </div>
-        <div class="logo">
-          <img src="./assets/vectors/fivem.svg" alt="fivem" />
-        </div>
+    <section id="fivem">
+      <div class="content">
+        <h2 class="heading">BEST PERFORMACNE - FIVEM SERVER HOSTING</h2>
+        <p class="desc">
+          Here at Realms Hosting we have the best FiveM Server Hosting for the
+          most affordable prices! Don't like them? 48 hour money back!
+        </p>
+      </div>
+      <div class="logo">
+        <img src="./assets/vectors/fivem.svg" alt="fivem" />
       </div>
       <img
         class="dots-bottom-left"
@@ -67,7 +74,111 @@
     </section>
 
     <section id="blogs">
+      <hr />
       <h1>BLOGS</h1>
+
+      <div id="blog-slider" class="cards-container">
+        <div class="card">
+          <img src="./assets/images/blog-1.png" alt="blog-1" />
+          <div class="body">
+            <h3>Rust Game Review & Rust Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/blog-2.png" alt="blog-2.png" />
+          <div class="body">
+            <h3>What is FiveM? And FiveM Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/blog-3.png" alt="blog-3" />
+          <div class="body">
+            <h3>Rust Game Review & Rust Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/blog-1.png" alt="blog-1" />
+          <div class="body">
+            <h3>Rust Game Review & Rust Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/blog-2.png" alt="blog-2.png" />
+          <div class="body">
+            <h3>What is FiveM? And FiveM Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/blog-3.png" alt="blog-3" />
+          <div class="body">
+            <h3>Rust Game Review & Rust Server Hosting</h3>
+            <a href="#" class="btn inverted">READ NOW</a>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section id="games">
+      <div class="text-bg">
+        <div class="img-bg">
+          <h1 class="heading text-end">Best Selling Games <br />FiveM</h1>
+          <h3 class="sub-heading">Get amazing cheap FiveM Server Hosting</h3>
+
+          <div class="offer">
+            <a href="#" class="btn inverted" href="#">Getting Started</a>
+            <h2 class="text">STARTING AT $10</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations">
+      <h1>SERVER LOCATIONS</h1>
+
+      <img class="map" src="./assets/images/map.png" alt="map" />
+    </section>
+
+    <footer id="footer" class="pb-3 pt-5">
+      <div class="navbar d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <img src="./assets/vectors/logo.svg" alt="logo" />
+        </div>
+
+        <div class="trustpilot">
+          <a class="text-primary" href="#">Trustpilot</a>
+        </div>
+
+        <ul class="nav d-flex justify-content-end align-items-center">
+          <li class="nav-item"><a href="#">HOME</a></li>
+          <li class="nav-item"><a href="#">STATUS</a></li>
+          <li class="nav-item"><a href="#">TERMS AND SERVICES</a></li>
+        </ul>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center offer">
+        <span>Get amazing cheap FiveM Server Hosting</span>
+        <img src="./assets/vectors/facebook.svg" alt="facebook" />
+      </div>
+
+      <div class="copyright text-primary text-center py-3">
+        &copy; 2021 Realms Hosting, All rights reserved
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

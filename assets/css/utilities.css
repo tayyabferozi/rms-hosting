@@ -1,0 +1,21 @@
+.text-primary {
+  color: #ff7e00 !important;
+}
+
+.btn {
+  color: #d86b00;
+  background: #fff;
+  border-radius: 50px;
+  border: 5px solid #ff7e00;
+  outline: 2px solid #fff;
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 4rem;
+}
+
+.btn.inverted {
+  background-color: #ff7e00;
+  color: #fff !important;
+  border-color: #fff;
+  outline-color: #ff7e00;
+}
