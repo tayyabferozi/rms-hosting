@@ -69,7 +69,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 7rem;
 }
 
 #navbar * {
@@ -247,6 +247,7 @@ hr {
 }
 
 #servers {
+  border-top: 10px solid #fff;
   position: relative;
   padding-top: 3rem;
   background-image: url("../vectors/bg-game-servers.svg");
@@ -257,16 +258,14 @@ hr {
   background-position-x: 161px;
 }
 
+#servers .heading {
+  margin-bottom: 2rem;
+}
+
 #servers img.dots-top-right {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-#servers hr.imgs-top {
-  margin: 1rem 0;
-  margin-left: var(--align-margin);
-  max-width: 1271px;
 }
 
 #servers hr.imgs-bottom {
