@@ -33,6 +33,23 @@ body {
   background: #151515;
 }
 
+#dark-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 1;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+#dark-overlay.active {
+  left: 0;
+}
+
 h1 {
   font-size: 5.4vw;
 }
@@ -183,6 +200,75 @@ hr {
 
 #navbar .hamburger img {
   width: 100%;
+}
+
+#navbar .nav-sm {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  padding-top: 2rem;
+  background: #fff;
+  z-index: 2;
+  width: 90%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#navbar .nav-sm.active {
+  left: 0;
+}
+
+#navbar .nav-sm #close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #151515;
+  z-index: 2;
+}
+
+#navbar .nav-sm * {
+  color: #151515;
+  font-size: 2rem;
+}
+
+#navbar .nav-sm .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#navbar .nav-sm .nav li {
+  width: 100%;
+}
+
+#navbar .nav-sm .nav li::after {
+  display: none;
+}
+
+#navbar .nav-sm .nav li a {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #151515;
+  width: 90%;
+}
+
+#navbar .nav-sm .nav li a::after {
+  display: none;
+}
+
+#navbar .nav-sm .nav li.active a {
+  border-bottom-width: 4px;
+  border-bottom-color: #ff7e00;
 }
 
 #hero {

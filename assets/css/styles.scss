@@ -38,6 +38,22 @@ body {
   background: $primary-dark;
 }
 
+#dark-overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  bottom: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 1;
+  transition: 0.2s ease;
+
+  &.active {
+    left: 0;
+  }
+}
+
 h1 {
   font-size: 5.4vw;
 
@@ -151,6 +167,69 @@ hr {
 
     img {
       width: 100%;
+    }
+  }
+
+  .nav-sm {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    padding-top: 2rem;
+    background: #fff;
+    z-index: 2;
+    width: 90%;
+    transition: 0.5s ease;
+
+    &.active {
+      left: 0;
+    }
+
+    #close {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+      font-size: 3rem;
+      color: #151515;
+      z-index: 2;
+    }
+
+    * {
+      color: #151515;
+      font-size: 2rem;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        width: 100%;
+
+        &::after {
+          display: none;
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 1rem;
+          border-bottom: 1px solid #151515;
+          width: 90%;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &.active {
+          a {
+            border-bottom-width: 4px;
+            border-bottom-color: $primary-color-light;
+          }
+        }
+      }
     }
   }
 }
