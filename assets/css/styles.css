@@ -11,6 +11,13 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  :root {
+    --section-padding: 6rem;
+    --align-margin: -6rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -69,70 +76,16 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 7rem;
+  padding: 1rem 4vw;
 }
 
 #navbar * {
-  font-size: 28px;
+  font-size: 1.4vw;
   font-weight: bold;
 }
 
-@media screen and (max-width: 1700px) {
-  #navbar * {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  #navbar * {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  #navbar * {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  #navbar * {
-    font-size: 16px;
-  }
-}
-
 #navbar .logo {
-  max-width: 349px;
-}
-
-@media screen and (max-width: 1700px) {
-  #navbar .logo {
-    max-width: 250px;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  #navbar .logo {
-    max-width: 200px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  #navbar .logo {
-    max-width: 170px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  #navbar .logo {
-    max-width: 110px;
-  }
-}
-
-@media screen and (max-width: 1190px) {
-  #navbar .logo {
-    font-size: 16px;
-  }
+  width: 17.5vw;
 }
 
 #navbar .logo img {
@@ -152,7 +105,26 @@ hr {
 }
 
 #navbar .nav li {
-  margin-right: 1rem;
+  margin-right: 3vw;
+  position: relative;
+}
+
+@media screen and (max-width: 1340px) {
+  #navbar .nav li {
+    margin-right: 2vw;
+  }
+}
+
+#navbar .nav li.active::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 140%;
+  bottom: -5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fe7800;
 }
 
 #navbar .account {
@@ -169,6 +141,14 @@ hr {
 
 #navbar .account img {
   margin-right: 0.5rem;
+}
+
+#navbar .hamburger {
+  width: 35px;
+}
+
+#navbar .hamburger img {
+  width: 100%;
 }
 
 #hero {
@@ -193,7 +173,7 @@ hr {
 
 #hero .main-heading {
   position: relative;
-  font-size: 89px;
+  font-size: 4.45vw;
 }
 
 #hero .main-heading::after {
@@ -206,26 +186,8 @@ hr {
   width: 60%;
 }
 
-@media screen and (max-width: 1370px) {
-  #hero .main-heading {
-    font-size: 70px;
-  }
-}
-
-@media screen and (max-width: 1135px) {
-  #hero .main-heading {
-    font-size: 55px;
-  }
-}
-
-@media screen and (max-width: 940px) {
-  #hero .main-heading {
-    font-size: 40px;
-  }
-}
-
 #hero .sub-heading {
-  font-size: 36px;
+  font-size: 1.8vw;
   margin-bottom: 1.75rem;
   font-weight: 500;
 }
@@ -264,7 +226,7 @@ hr {
 }
 
 #hero .btns-container .btn {
-  width: 194px;
+  width: 12vw;
   font-size: 23px;
   padding-left: 0;
   padding-right: 0;
@@ -316,6 +278,12 @@ hr {
 
 #hero.landing .sub-heading {
   margin-top: -1rem;
+}
+
+@media screen and (max-width: 940px) {
+  #hero.landing .sub-heading {
+    margin-top: -0.5rem;
+  }
 }
 
 #servers {
@@ -937,6 +905,15 @@ hr {
 #footer .navbar {
   font-size: 28px;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 1700px) {

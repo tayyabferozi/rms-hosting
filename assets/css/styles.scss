@@ -11,6 +11,12 @@
     --align-margin: -8rem;
   }
 }
+@media screen and (max-width: 1150px) {
+  :root {
+    --section-padding: 6rem;
+    --align-margin: -6rem;
+  }
+}
 
 $primary-color: #d86b00;
 $primary-color-light: #ff7e00;
@@ -64,51 +70,15 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 7rem;
+  padding: 1rem 4vw;
 
   * {
-    font-size: 28px;
+    font-size: 1.4vw;
     font-weight: bold;
-
-    @media screen and (max-width: 1700px) {
-      font-size: 24px;
-    }
-
-    @media screen and (max-width: 1440px) {
-      font-size: 20px;
-    }
-
-    @media screen and (max-width: 1300px) {
-      font-size: 18px;
-    }
-
-    @media screen and (max-width: 1190px) {
-      font-size: 16px;
-    }
   }
 
   .logo {
-    max-width: 349px;
-
-    @media screen and (max-width: 1700px) {
-      max-width: 250px;
-    }
-
-    @media screen and (max-width: 1440px) {
-      max-width: 200px;
-    }
-
-    @media screen and (max-width: 1300px) {
-      max-width: 170px;
-    }
-
-    @media screen and (max-width: 1190px) {
-      max-width: 110px;
-    }
-
-    @media screen and (max-width: 1190px) {
-      font-size: 16px;
-    }
+    width: 17.5vw;
 
     img {
       width: 100%;
@@ -121,7 +91,23 @@ hr {
     align-items: center;
 
     li {
-      margin-right: 1rem;
+      margin-right: 3vw;
+      position: relative;
+
+      @media screen and (max-width: 1340px) {
+        margin-right: 2vw;
+      }
+
+      &.active::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 140%;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $primary-color-text;
+      }
     }
   }
 
@@ -132,6 +118,14 @@ hr {
 
     img {
       margin-right: 0.5rem;
+    }
+  }
+
+  .hamburger {
+    width: 35px;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -148,7 +142,7 @@ hr {
 
   .main-heading {
     position: relative;
-    font-size: 89px;
+    font-size: 4.45vw;
 
     &::after {
       position: absolute;
@@ -159,22 +153,10 @@ hr {
       background-color: $primary-color-text;
       width: 60%;
     }
-
-    @media screen and (max-width: 1370px) {
-      font-size: 70px;
-    }
-
-    @media screen and (max-width: 1135px) {
-      font-size: 55px;
-    }
-
-    @media screen and (max-width: 940px) {
-      font-size: 40px;
-    }
   }
 
   .sub-heading {
-    font-size: 36px;
+    font-size: 1.8vw;
     margin-bottom: 1.75rem;
     font-weight: 500;
 
@@ -200,7 +182,7 @@ hr {
     align-items: center;
 
     .btn {
-      width: 194px;
+      width: 12vw;
       font-size: 23px;
       padding-left: 0;
       padding-right: 0;
@@ -246,6 +228,10 @@ hr {
 
   .sub-heading {
     margin-top: -1rem;
+
+    @media screen and (max-width: 940px) {
+      margin-top: -0.5rem;
+    }
   }
 }
 
@@ -847,6 +833,9 @@ hr {
   .navbar {
     font-size: 28px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     @media screen and (max-width: 1700px) {
       font-size: 24px;
