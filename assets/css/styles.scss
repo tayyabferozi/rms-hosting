@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --section-padding: 10rem;
-  --align-margin: -10rem;
+  --section-padding: 10vw;
+  --align-margin: -10vw;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 767px) {
   :root {
-    --section-padding: 8rem;
-    --align-margin: -8rem;
+    --section-padding: 7vw;
+    --align-margin: -7vw;
   }
 }
-@media screen and (max-width: 1150px) {
+
+@media screen and (max-width: 575px) {
   :root {
-    --section-padding: 6rem;
-    --align-margin: -6rem;
+    --section-padding: 5vw;
+    --align-margin: -5vw;
   }
 }
 
@@ -38,19 +39,35 @@ body {
 }
 
 h1 {
-  font-size: 108px;
+  font-size: 5.4vw;
 
-  @media screen and (max-width: 1600px) {
-    font-size: 92px;
+  @media screen and (max-width: 767px) {
+    font-size: 6.9vw;
   }
 
-  @media screen and (max-width: 1460px) {
-    font-size: 72px;
+  @media screen and (max-width: 575px) {
+    font-size: 8.5vw;
   }
 }
 
 h2 {
-  font-size: 68px;
+  font-size: 3.4vw;
+
+  @media screen and (max-width: 767px) {
+    font-size: 5.5vw;
+  }
+}
+
+h3 {
+  font-size: 1.85vw;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.9vw;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-size: 7vw;
+  }
 }
 
 section,
@@ -70,7 +87,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4vw;
+  padding: 2rem 4vw;
 
   * {
     font-size: 1.4vw;
@@ -79,6 +96,14 @@ hr {
 
   .logo {
     width: 17.5vw;
+
+    @media screen and (max-width: 767px) {
+      width: 25vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 40vw;
+    }
 
     img {
       width: 100%;
@@ -144,6 +169,14 @@ hr {
     position: relative;
     font-size: 4.45vw;
 
+    @media screen and (max-width: 767px) {
+      font-size: 6vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 7vw;
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -157,61 +190,60 @@ hr {
 
   .sub-heading {
     font-size: 1.8vw;
-    margin-bottom: 1.75rem;
+    margin-bottom: 1vw;
     font-weight: 500;
 
-    @media screen and (max-width: 1370px) {
-      font-size: 29px;
+    @media screen and (max-width: 767px) {
+      font-size: 2.5vw;
     }
 
-    @media screen and (max-width: 1135px) {
-      font-size: 23px;
-    }
-
-    @media screen and (max-width: 940px) {
-      font-size: 18px;
+    @media screen and (max-width: 575px) {
+      font-size: 4vw;
     }
   }
 
   .btns-container {
-    max-width: 500px;
+    max-width: 27vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 767px) {
+      max-width: 32vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      max-width: 65vw;
+    }
+
     .btn {
       width: 12vw;
-      font-size: 23px;
+      font-size: 1.4vw;
       padding-left: 0;
       padding-right: 0;
 
-      @media screen and (max-width: 1370px) {
-        width: 175px;
-        font-size: 20px;
+      @media screen and (max-width: 767px) {
+        width: 13.5vw;
+        font-size: 1.5vw;
       }
 
-      @media screen and (max-width: 1135px) {
-        width: 165px;
-        font-size: 18px;
+      @media screen and (max-width: 575px) {
+        width: 30vw;
+        font-size: 3.7vw;
+        margin: 0.75rem 0;
       }
-    }
-
-    @media screen and (max-width: 1370px) {
-      max-width: 430px;
-    }
-
-    @media screen and (max-width: 1135px) {
-      max-width: 380px;
     }
   }
 
   .mouse {
+    width: 2vw;
     position: absolute;
     left: 50%;
-    bottom: 2rem;
     transform: translateX(-50%);
+    bottom: 2vw;
   }
 }
 
@@ -220,6 +252,14 @@ hr {
 #hero.landing {
   background-image: url("../images/bg-squad-server-landing-with-gradient.png");
 
+  @media screen and (max-width: 767px) {
+    height: 80vw;
+  }
+
+  @media screen and (max-width: 575px) {
+    height: 100vw;
+  }
+
   .main-heading::after {
     top: 0;
     bottom: unset;
@@ -227,8 +267,6 @@ hr {
   }
 
   .sub-heading {
-    margin-top: -1rem;
-
     @media screen and (max-width: 940px) {
       margin-top: -0.5rem;
     }
@@ -236,16 +274,15 @@ hr {
 }
 
 #servers {
-  border-top: 10px solid #fff;
   position: relative;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 2.5vw;
+  padding-bottom: 3vw;
   background-image: url("../vectors/bg-game-servers.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 77vw;
-  background-position-y: -40px;
-  background-position-x: 161px;
+  background-size: 80vw;
+  background-position-y: -2vw;
+  background-position-x: 9.5vw;
 
   .heading {
     margin-bottom: 2rem;
@@ -255,6 +292,7 @@ hr {
     position: absolute;
     top: 0;
     right: 0;
+    width: 8vw;
   }
 }
 
@@ -265,11 +303,17 @@ hr {
   align-content: center;
   background-image: url("../vectors/bg-fivem-server-hosting.svg");
   background-repeat: no-repeat;
-  background-size: 86vw;
+  background-size: 81vw;
   background-position-y: 0px;
-  background-position-x: 140px;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  background-position-x: 9vw;
+  padding-top: 6vw;
+  padding-bottom: 4vw;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
   &::before {
     position: absolute;
@@ -277,26 +321,39 @@ hr {
     top: 0;
     right: 0;
     height: 5px;
-    width: 100%;
+    width: 90%;
     background-color: #fe7800;
-    width: 1830px;
   }
 
   .content {
-    max-width: 1264px;
+    max-width: 63vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 
+    @media screen and (max-width: 767px) {
+      max-width: 75vw;
+      text-align: center;
+    }
+
     .desc {
-      font-size: 30px;
+      font-size: 1.5vw;
       text-align: right;
+
+      @media screen and (max-width: 767px) {
+        text-align: center;
+        font-size: 2.5vw;
+      }
     }
   }
 
   .logo {
-    max-width: 248px;
+    max-width: 13vw;
+
+    @media screen and (max-width: 767px) {
+      max-width: 21vw;
+    }
 
     img {
       width: 100%;
@@ -305,17 +362,17 @@ hr {
 
   img.dots-bottom-left {
     position: absolute;
-    left: -61px;
+    left: -2.2vw;
     bottom: -50px;
+    width: 8.5vw;
   }
 }
 
 #blogs {
   padding-top: 1rem;
 
-  hr {
-    margin-left: var(--align-margin);
-    max-width: 470px;
+  .heading {
+    margin-bottom: 0;
   }
 
   .cards-container {
@@ -339,9 +396,13 @@ hr {
         background: #fff;
         text-align: center;
         padding: 2rem;
-        padding-bottom: 5rem;
+        padding-bottom: 4vw;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+
+        @media screen and (max-width: 767px) {
+          padding-bottom: 8vw;
+        }
 
         * {
           color: $primary-color-light;
@@ -352,9 +413,27 @@ hr {
         }
 
         .btn {
-          font-size: 20px;
-          padding: 0.75rem 3rem;
-          margin: 18rem 0;
+          font-size: 1.2vw;
+          width: 9.7vw;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+
+          @media screen and (max-width: 767px) {
+            width: 18vw;
+            font-size: 2vw;
+          }
+
+          @media screen and (max-width: 575px) {
+            width: 35vw;
+            font-size: 4vw;
+            padding: 3vw 0;
+          }
+
+          &::after {
+            border-width: 1px;
+            border-color: $primary-color-text;
+          }
         }
       }
     }
@@ -380,21 +459,36 @@ hr {
   background-image: url("../images/bg-best-games_img-with-overy-and-text.png");
   background-size: cover;
   background-repeat: no-repeat;
-
-  padding-top: 18rem;
-  padding-bottom: 9rem;
+  padding-top: 15vw;
+  padding-bottom: 7.5vw;
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
 
+  @media screen and (max-width: 767px) {
+    padding-top: 25vw;
+    padding-bottom: 15vw;
+  }
+
   .heading {
-    font-size: 180px;
+    font-size: 9vw;
     line-height: 0.75;
+
+    @media screen and (max-width: 767px) {
+      font-size: 10vw;
+      text-align: center !important;
+      line-height: 1;
+    }
   }
 
   .sub-heading {
     font-weight: 500;
-    font-size: 49px;
+    font-size: 2.55vw;
     text-align: right;
+
+    @media screen and (max-width: 767px) {
+      font-size: 4.8vw;
+      text-align: center !important;
+    }
   }
 
   .offer {
@@ -402,22 +496,56 @@ hr {
     justify-content: flex-end;
     align-items: center;
 
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+
     a {
-      padding: 1.25rem 2.25rem;
+      text-align: center;
+      width: 12.45vw;
+      font-size: 1.3vw;
+      margin-right: 4vw;
+
+      @media screen and (max-width: 767px) {
+        width: 205px;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        font-size: 3vw;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 4vw;
+      }
+
+      &::after {
+        // top: -7px;
+        // bottom: -7px;
+        // left: -7px;
+        // right: -7px;
+        // border-width: 2px;
+      }
     }
 
     .text {
-      font-size: 96px;
+      font-size: 5vw;
     }
   }
 }
 
 #locations {
-  padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-top: 2vw;
+  padding-bottom: 5vw;
   position: relative;
   top: -2px;
   background: $primary-color-light;
+  z-index: -1;
+
+  h1 {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+  }
 
   .map {
     max-width: 1507px;
@@ -520,7 +648,7 @@ hr {
       max-width: 482px;
       background: #fff;
       border-radius: 50px;
-      padding: 1.5rem 3.5rem;
+      padding: 2vw 1.5vw;
       margin-right: 0;
       margin-left: auto;
       margin-top: 5rem;
@@ -827,7 +955,7 @@ hr {
     position: absolute;
     left: 0;
     width: 100%;
-    top: -6vw;
+    top: -5.9vw;
   }
 
   .navbar {
@@ -837,43 +965,29 @@ hr {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 1700px) {
-      font-size: 24px;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    @media screen and (max-width: 1440px) {
-      font-size: 20px;
-    }
+    * {
+      font-size: 1.6vw;
 
-    @media screen and (max-width: 1300px) {
-      font-size: 18px;
-    }
-
-    @media screen and (max-width: 1190px) {
-      font-size: 16px;
+      @media screen and (max-width: 767px) {
+        font-size: 1rem;
+      }
     }
 
     .logo {
-      width: 349px;
+      width: 17.5vw;
 
-      @media screen and (max-width: 1700px) {
-        width: 310px;
+      @media screen and (max-width: 767px) {
+        width: 25vw;
+        margin-bottom: 1rem;
       }
 
-      @media screen and (max-width: 1520px) {
-        width: 295px;
-      }
-
-      @media screen and (max-width: 1440px) {
-        width: 260px;
-      }
-
-      @media screen and (max-width: 1300px) {
-        width: 220px;
-      }
-
-      @media screen and (max-width: 1190px) {
-        width: 349px;
+      @media screen and (max-width: 767px) {
+        width: 40vw;
       }
 
       img {
@@ -882,22 +996,51 @@ hr {
     }
 
     .nav {
-      .nav-item {
-        margin-left: 7rem;
+      @media screen and (max-width: 767px) {
+        flex-direction: column !important;
+        align-items: flex-start !important ;
+      }
 
-        &:first-child {
-          margin-left: 0;
+      .nav-item {
+        margin-left: 7.2vw;
+
+        @media screen and (max-width: 767px) {
+          margin: 1rem 0;
+        }
+
+        @media screen and (min-width: 768px) {
+          &:first-child {
+            margin-left: 0;
+          }
         }
       }
     }
   }
 
   .offer {
-    font-size: 29px;
+    font-size: 1.5vw;
+
+    * {
+      @media screen and (max-width: 767px) {
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      width: 3.2vw;
+
+      @media screen and (max-width: 767px) {
+        width: 2rem;
+      }
+    }
   }
 
   .copyright {
-    font-size: 28px;
+    font-size: 1.5vw;
     font-weight: bold;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1rem;
+    }
   }
 }
