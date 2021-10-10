@@ -62,7 +62,8 @@ h1 {
   }
 
   @media screen and (max-width: 575px) {
-    font-size: 8.5vw;
+    // font-size: 8.5vw;
+    font-size: 12vw;
   }
 }
 
@@ -244,23 +245,31 @@ hr {
   align-items: center;
   flex-direction: column;
 
+  @media screen and (max-width: 767px) {
+    height: 80vw;
+  }
+
+  @media screen and (max-width: 575px) {
+    height: 100vw;
+  }
+
   .main-heading {
     position: relative;
     font-size: 4.45vw;
 
     @media screen and (max-width: 767px) {
-      font-size: 6vw;
+      font-size: 8vw;
     }
 
     @media screen and (max-width: 575px) {
-      font-size: 7vw;
+      font-size: 9vw;
     }
 
     &::after {
       position: absolute;
       content: "";
       left: 0;
-      bottom: 1.25rem;
+      bottom: 0.7vw;
       height: 3px;
       background-color: $primary-color-text;
       width: 60%;
@@ -278,6 +287,56 @@ hr {
 
     @media screen and (max-width: 575px) {
       font-size: 4vw;
+    }
+  }
+
+  .btn {
+    width: 12.18vw;
+    font-size: 1.2vw;
+
+    @media screen and (max-width: 767px) {
+      width: 10rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 8rem;
+      font-size: 0.775rem;
+    }
+  }
+
+  .mouse {
+    width: 2vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vw;
+
+    @media screen and (max-width: 767px) {
+      width: 4vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      width: 5vw;
+    }
+  }
+}
+
+// *************************************************************** FIRST PAGE *****************************************************************
+
+#hero.landing {
+  background-image: url("../images/bg-squad-server-landing-with-gradient.png");
+
+  .main-heading::after {
+    top: 0;
+    bottom: unset;
+    width: 22%;
+  }
+
+  .sub-heading {
+    @media screen and (max-width: 940px) {
+      margin-top: -0.5rem;
     }
   }
 
@@ -314,40 +373,6 @@ hr {
         font-size: 3.7vw;
         margin: 0.75rem 0;
       }
-    }
-  }
-
-  .mouse {
-    width: 2vw;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2vw;
-  }
-}
-
-// *************************************************************** FIRST PAGE *****************************************************************
-
-#hero.landing {
-  background-image: url("../images/bg-squad-server-landing-with-gradient.png");
-
-  @media screen and (max-width: 767px) {
-    height: 80vw;
-  }
-
-  @media screen and (max-width: 575px) {
-    height: 100vw;
-  }
-
-  .main-heading::after {
-    top: 0;
-    bottom: unset;
-    width: 22%;
-  }
-
-  .sub-heading {
-    @media screen and (max-width: 940px) {
-      margin-top: -0.5rem;
     }
   }
 }
@@ -642,18 +667,27 @@ hr {
   padding-top: 2rem;
   position: relative;
   background-image: url("../images/bg-game-servers-page.png");
-  background-size: 1860px;
+  background-repeat: no-repeat;
+  background-position-x: -10vw;
+  background-position-y: -11.5vw;
+  background-size: 117vw;
+
+  .heading {
+    margin-bottom: 1.5vw;
+  }
 
   .dots-top-right {
     position: absolute;
     top: 0;
     right: 0;
+    width: 8.4vw;
   }
 
   .dots-bottom-left {
     position: absolute;
-    bottom: -190px;
+    bottom: -10vw;
     left: 0;
+    width: 8.4vw;
   }
 
   hr {
@@ -663,11 +697,16 @@ hr {
 }
 
 #realms-hosting-panel {
-  padding-top: 11rem;
-  padding-bottom: 8rem;
+  padding-top: 12vw;
+  padding-bottom: 8vw;
   background-image: url("../images/bg-realms-hosting-with-color.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 20vw;
+    padding-bottom: 17vw;
+  }
 
   .heading {
     text-align: right;
@@ -676,20 +715,66 @@ hr {
 
   .sub-heading {
     text-align: right;
-    font-size: 49px;
+    font-size: 2.4vw;
     font-weight: 500;
+
+    @media screen and (max-width: 767px) {
+      font-size: 3.1vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 3.8vw;
+    }
   }
 
   .showcase {
     margin-top: 4rem;
 
+    .row {
+      @media screen and (max-width: 767px) {
+        --bs-gutter-x: 0;
+      }
+    }
+
+    .realm-hosting {
+      width: 55.2vw;
+
+      @media screen and (max-width: 767px) {
+        margin-bottom: 2rem;
+        width: 80vw;
+      }
+    }
+
     .btn {
       display: block;
-      width: 327px;
-      font-size: 32px;
+      width: 17vw;
+      font-size: 1.65vw;
       text-align: center;
-      padding: 1.5rem;
-      margin-bottom: 3.5rem;
+      padding: 1.9vw 0;
+      margin-bottom: 2.8vw;
+      border-radius: 60px;
+
+      @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 25vw;
+        font-size: 2.2vw;
+      }
+
+      &::after {
+        left: -8px;
+        right: -8px;
+        top: -8px;
+        bottom: -8px;
+        border-radius: 64px;
+
+        @media screen and (max-width: 1100px) {
+          left: -5px;
+          right: -5px;
+          top: -5px;
+          bottom: -5px;
+        }
+      }
     }
   }
 }
@@ -697,19 +782,52 @@ hr {
 .pattern-bg {
   background-image: url("../images/bg-reviews.png");
   background-repeat: no-repeat;
+  background-position-y: -8vw;
 }
 
 #reviews {
   position: relative;
+  padding-top: 5vw;
 
   .vertical-line {
     position: absolute;
     left: 50%;
-    top: 21rem;
+    top: 25vw;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    border-left: 6px dashed #fe7800;
-    height: 75%;
+    border-left: 0.3vw dashed #fe7800;
+    height: 83vw;
+
+    @media screen and (max-width: 1200px) {
+      height: 91vw;
+      top: 28vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      left: 9.5vw;
+      height: 110vw;
+      top: 31vw;
+    }
+
+    @media screen and (max-width: 622px) {
+      top: 35vw;
+    }
+
+    @media screen and (max-width: 575px) {
+      left: 7.5vw;
+      top: 44vw;
+      height: 63% !important;
+    }
+
+    @media screen and (max-width: 477px) {
+      top: 46vw;
+      height: 116vw;
+    }
+
+    @media screen and (max-width: 355px) {
+      top: 49.5vw;
+      height: 120vw;
+    }
   }
 
   hr {
@@ -718,20 +836,44 @@ hr {
   }
 
   .reviews {
-    max-width: 1170px;
+    max-width: 61vw;
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (max-width: 1200px) {
+      max-width: 80vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 80vw;
+      margin-right: unset;
+    }
+
+    @media screen and (max-width: 575px) {
+      max-width: 84vw;
+    }
+
     .item {
       position: relative;
-      max-width: 482px;
+      max-width: 25.1vw;
       background: #fff;
-      border-radius: 50px;
-      padding: 2vw 1.5vw;
+      border-radius: 3vw;
+      padding: 1vw 2.5vw;
       margin-right: 0;
       margin-left: auto;
-      margin-top: 5rem;
-      margin-bottom: 12rem;
+      margin-top: 4.2vw;
+      margin-bottom: 9.5vw;
+
+      @media screen and (max-width: 1200px) {
+        max-width: 34.5vw;
+        padding: 1.5vw 2.8vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+      }
 
       &:first-of-type {
         margin-bottom: 0;
@@ -741,41 +883,64 @@ hr {
         content: "";
         position: absolute;
         background: $primary-color-text;
-        width: 100px;
-        height: 100px;
+        width: 4.7vw;
+        height: 4.7vw;
         border-radius: 50%;
-        border: 5px solid $primary-dark;
-        outline: 3px solid #fff;
+        border: 0.4vw solid $primary-dark;
+        outline: 0.2vw solid #fff;
         top: 0;
-        left: -10rem;
+        left: -8.25vw;
         right: unset;
+
+        @media screen and (max-width: 767px) {
+          left: -6.25vw;
+        }
       }
 
       &:nth-child(2n + 1) {
-        text-align: right;
-        margin-right: auto;
-        margin-left: 0;
+        @media screen and (min-width: 768px) {
+          text-align: right;
+          margin-right: auto;
+          margin-left: 0;
 
-        &::before {
-          right: -10rem;
-          left: unset;
+          &::before {
+            right: -8.25vw;
+            left: unset;
+          }
         }
       }
 
       .name {
-        font-size: 48px;
+        font-size: 2.5vw;
         font-weight: 600;
         color: $primary-color-text;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 3.5vw;
+        }
+
+        @media screen and (max-width: 767px) {
+          font-size: 5vw;
+        }
       }
 
       .content {
         font-weight: 600;
-        font-size: 18px;
+        font-size: 0.85vw;
         color: $primary-color-text;
+
+        @media screen and (max-width: 1200px) {
+          font-size: 1vw;
+        }
+
+        @media screen and (max-width: 767px) {
+          font-size: 2.5vw;
+        }
       }
 
       .rating {
         margin-top: 0.5rem;
+        width: 13.5vw;
       }
     }
   }
@@ -786,7 +951,7 @@ hr {
 
   .heading {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 5vw;
 
     .underline {
       border-bottom: 5px solid $primary-color-text;
@@ -800,16 +965,27 @@ hr {
       margin: 2rem 0 4rem;
 
       .question {
-        font-size: 48px;
+        font-size: 2.5vw;
+        padding-right: 3vw;
+        padding-right: 2rem;
         position: relative;
         border-bottom: 8px solid transparent;
         transition: 0.4s ease;
 
-        &::after {
+        @media screen and (max-width: 767px) {
+          font-size: 3.5vw;
+        }
+
+        .toggler {
           position: absolute;
           right: 0;
-          content: url("../images/question-toggler.png");
+          top: 0;
           transition: 0.4s ease;
+          width: 3vw;
+
+          img {
+            width: 100%;
+          }
         }
 
         &.close {
@@ -818,14 +994,25 @@ hr {
           &::after {
             transform: rotate(-90deg);
           }
+
+          .toggler {
+            transform: rotate(-90deg);
+          }
         }
       }
+
       .answer {
         background-color: $primary-color-text;
         border-radius: 20px;
         padding: 2rem 3rem;
         font-weight: 600;
         display: none;
+        font-size: 1.095vw;
+
+        @media screen and (max-width: 767px) {
+          padding: 1.5rem;
+          font-size: 2.5vw;
+        }
 
         &:first-of-type {
           display: block;

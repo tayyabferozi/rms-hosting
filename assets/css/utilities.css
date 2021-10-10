@@ -72,13 +72,9 @@
 
 .img-container .item {
   flex-basis: 33.33%;
-  max-width: 481px;
-  margin-top: 3rem;
-  margin-left: 3rem;
   border-radius: 8px;
   overflow: hidden;
   max-width: 33%;
-  margin-left: 0;
   padding: 2vw 1.5vw;
   margin: 0;
 }

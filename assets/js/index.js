@@ -37,10 +37,3 @@ $("#blog-slider").on("beforeChange", function () {
     }
   });
 });
-
-function toggleSideNav() {
-  $("#dark-overlay").toggleClass("active");
-  $(".nav-sm").toggleClass("active");
-}
-
-$(".hamburger, #dark-overlay, #close").click(toggleSideNav);

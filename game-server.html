@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
+    <div id="dark-overlay"></div>
     <nav id="navbar">
       <div class="logo">
-        <img src="./assets/vectors/logo.svg" alt="logo" />
+        <img src="./assets/images/logo.png" alt="logo" />
       </div>
       <ul class="nav d-md-flex d-none">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">GAME SERVERS</a></li>
+        <li><a href="./index.html">HOME</a></li>
+        <li class="active"><a href="#">GAME SERVERS</a></li>
         <li><a href="#">VPS HOSTING</a></li>
         <li><a href="#">KnowledgeBase</a></li>
         <li><a href="#">STATUS</a></li>
@@ -29,6 +30,19 @@
       </div>
       <div class="hamburger d-md-none d-block">
         <img src="./assets/images/hamburger.png" alt="hamburger" />
+      </div>
+
+      <div class="nav-sm">
+        <div id="close">&times;</div>
+        <!-- <img src="./assets/images/logo.png" alt=" logo" /> -->
+        <ul class="nav">
+          <li><a href="./index.html">HOME</a></li>
+          <li class="active"><a href="#">GAME SERVERS</a></li>
+          <li><a href="#">VPS HOSTING</a></li>
+          <li><a href="#">KnowledgeBase</a></li>
+          <li><a href="#">STATUS</a></li>
+          <li><a href="#">BLOG</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -70,11 +84,11 @@
           <div class="item">
             <img src="./assets/images/game-server-6.png" alt="server-6" />
           </div>
-          <div class="item"></div>
+          <div class="item d-sm-block d-none"></div>
           <div class="item">
             <img src="./assets/images/game-server-7.png" alt="server-7" />
           </div>
-          <div class="item"></div>
+          <div class="item d-sm-block d-none"></div>
         </div>
         <img
           class="dots-bottom-left"
@@ -90,17 +104,26 @@
         <div class="showcase">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-9">
+              <div class="col-md-9 d-flex justify-content-center row">
                 <img
+                  class="realm-hosting"
                   src="./assets/images/realm-hosting.png"
                   alt="realm-hosting"
                 />
               </div>
-              <div class="col-md-3">
-                <a href="#" class="btn outlined">Control Panel</a>
-                <a href="#" class="btn outlined">Console</a>
-                <a href="#" class="btn outlined bg-black">File Editor</a>
-                <a href="#" class="btn outlined">File Manager</a>
+              <div class="col-md-3 row">
+                <div class="col-md-12 col-6">
+                  <a href="#" class="btn outlined">Control Panel</a>
+                </div>
+                <div class="col-md-12 col-6">
+                  <a href="#" class="btn outlined">Console</a>
+                </div>
+                <div class="col-md-12 col-6">
+                  <a href="#" class="btn outlined bg-black">File Editor</a>
+                </div>
+                <div class="col-md-12 col-6">
+                  <a href="#" class="btn outlined">File Manager</a>
+                </div>
               </div>
             </div>
           </div>
@@ -109,9 +132,10 @@
 
       <div class="pattern-bg">
         <section id="reviews">
-          <h1>REVIEW'S</h1>
           <div class="vertical-line"></div>
-          <hr />
+          <div class="heading-underlined start">
+            <h1 class="heading">REVIEW'S</h1>
+          </div>
 
           <ul class="reviews">
             <li class="item">
@@ -195,6 +219,12 @@
               <h3 class="question">
                 What factors should I consider when purchasing homeowners
                 insurance?
+                <div class="toggler">
+                  <img
+                    src="./assets/images/question-toggler.png"
+                    alt="toggler"
+                  />
+                </div>
               </h3>
               <h4 class="answer">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -213,6 +243,12 @@
               <h3 class="question close">
                 What factors should I consider when purchasing homeowners
                 insurance?
+                <div class="toggler">
+                  <img
+                    src="./assets/images/question-toggler.png"
+                    alt="toggler"
+                  />
+                </div>
               </h3>
               <h4 class="answer" style="display: none">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -231,6 +267,12 @@
               <h3 class="question close">
                 What factors should I consider when purchasing homeowners
                 insurance?
+                <div class="toggler">
+                  <img
+                    src="./assets/images/question-toggler.png"
+                    alt="toggler"
+                  />
+                </div>
               </h3>
               <h4 class="answer" style="display: none">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -249,6 +291,12 @@
               <h3 class="question close">
                 What factors should I consider when purchasing homeowners
                 insurance?
+                <div class="toggler">
+                  <img
+                    src="./assets/images/question-toggler.png"
+                    alt="toggler"
+                  />
+                </div>
               </h3>
               <h4 class="answer" style="display: none">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -267,6 +315,12 @@
               <h3 class="question close">
                 What factors should I consider when purchasing homeowners
                 insurance?
+                <div class="toggler">
+                  <img
+                    src="./assets/images/question-toggler.png"
+                    alt="toggler"
+                  />
+                </div>
               </h3>
               <h4 class="answer" style="display: none">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -287,11 +341,7 @@
     </main>
 
     <footer id="footer" class="pb-3 pt-5">
-      <img
-        class="line"
-        src="./assets/images/footer-clipped-path-with-line.png"
-        alt=""
-      />
+      <img class="line" src="./assets/images/footer-clipped-path.psd" alt="" />
       <div class="navbar">
         <div class="logo">
           <img src="./assets/vectors/logo.svg" alt="logo" />
@@ -326,5 +376,6 @@
       src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script src="./assets/js/game-server.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
