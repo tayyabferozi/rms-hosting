@@ -25,7 +25,30 @@ $("#blog-slider").slick({
   ],
 });
 
-$("#main-slider").slick();
+var swiper = new Swiper("#main-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var splide = new Splide("#blog-slider-splide", {
+  perPage: 3,
+  breakpoints: {
+    767: {
+      perPage: 2,
+      // gap: ".7rem",
+      // height: "6rem",
+    },
+    575: {
+      perPage: 1,
+      // gap: ".7rem",
+      // height: "6rem",
+    },
+  },
+});
+
+splide.mount();
 
 $("#blog-slider").on("beforeChange", function () {
   $(".slick-active").each(function (i, el) {

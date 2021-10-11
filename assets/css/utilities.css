@@ -10,7 +10,8 @@
   font-size: 25px;
   font-weight: 600;
   margin-right: 4rem;
-  padding: 1.2vw 0;
+  padding: 1vw 0;
+  /* padding: 1.2vw 0; */
 }
 
 .btn.outlined * {
@@ -26,6 +27,15 @@
   bottom: -5px;
   border: 1px solid #fff;
   border-radius: 56px;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn.outlined::after {
+    left: -4px;
+    right: -4px;
+    top: -4px;
+    bottom: -4px;
+  }
 }
 
 .btn.outlined.inverted {
