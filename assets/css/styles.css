@@ -903,6 +903,13 @@ hr {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #realms-hosting-panel .showcase .btn {
+    width: 30w;
+    font-size: 3vw;
+  }
+}
+
 #realms-hosting-panel .showcase .btn::after {
   left: -8px;
   right: -8px;
@@ -1210,14 +1217,20 @@ hr {
   margin-top: -0.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  #hero.fivem-server .sub-heading {
+    margin-top: 0;
+  }
+}
+
 #payment-plans {
   position: relative;
   padding-top: 3rem;
   background-image: url("../images/bg-plans.png");
   background-repeat: no-repeat;
-  background-position-x: 200px;
   background-position-x: 120px;
   background-position-y: 40px;
+  background-size: 86.5vw;
 }
 
 #payment-plans .heading {
@@ -1228,6 +1241,7 @@ hr {
   position: absolute;
   right: 0;
   top: 0;
+  width: 8.3vw;
 }
 
 #payment-plans .plans .plan {
@@ -1258,12 +1272,24 @@ hr {
 #payment-plans .plans .plan .plan-img {
   position: absolute;
   background: #fff;
-  width: 218px;
+  width: 65%;
   left: 50%;
   top: -4rem;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   border-radius: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  #payment-plans .plans .plan .plan-img {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #payment-plans .plans .plan .plan-img {
+    width: 65%;
+  }
 }
 
 #payment-plans .plans .plan .plan-img::before {
@@ -1277,12 +1303,28 @@ hr {
   border-radius: 80px;
 }
 
+#payment-plans .plans .plan .plan-img .img {
+  width: 53%;
+}
+
 #payment-plans .plans .plan .plan-body {
   padding: 6rem 2.5rem 1.2rem;
 }
 
 #payment-plans .plans .plan .plan-body .name {
   font-size: 33px;
+}
+
+@media screen and (max-width: 1220px) {
+  #payment-plans .plans .plan .plan-body .name {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #payment-plans .plans .plan .plan-body .name {
+    font-size: 24px;
+  }
 }
 
 #payment-plans .plans .plan .plan-body .specs {
@@ -1303,25 +1345,42 @@ hr {
   padding: 0.75rem 1.75rem;
 }
 
+@media screen and (max-width: 1220px) {
+  #payment-plans .plans .plan .plan-body .btn {
+    width: 110px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #payment-plans .plans .plan .plan-body .btn {
+    width: 90px;
+    font-size: 18px;
+  }
+}
+
 #fivem.fivem-hosting {
   background-image: url("../images/bg-fivem-hosting-white.png");
   background-color: #fe7800;
-  padding-top: 15rem;
-  padding-bottom: 13rem;
+  padding-top: 12.5vw;
+  padding-bottom: 11vw;
   background-position-x: 150px;
   background-position-y: 100px;
+  background-size: 82vw;
 }
 
 #fivem.fivem-hosting .top-line {
   position: absolute;
   top: -1px;
   left: 0;
+  width: 100vw;
 }
 
 #fivem.fivem-hosting .bottom-line {
   position: absolute;
   bottom: -1px;
   left: 0;
+  width: 100vw;
 }
 
 #know-fivem {
@@ -1341,6 +1400,24 @@ hr {
   padding: 1em 0 1rem;
 }
 
+@media screen and (max-width: 1200px) {
+  #know-fivem .text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #know-fivem .text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #know-fivem .text {
+    font-size: 16px;
+  }
+}
+
 #locations.fivem-hosting {
   background: unset;
   padding-top: 3rem;
@@ -1354,40 +1431,101 @@ hr {
   background-image: url("../images/bg-realms-hosting-with-light-color.png");
 }
 
+@media screen and (max-width: 575px) {
+  #realms-hosting-panel.fivem-server {
+    padding-top: 24vw;
+  }
+}
+
 #help {
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-image: url("../images/bg-need-help.png");
-  background-size: 1596px;
-  background-position-x: 132px;
   background-repeat: no-repeat;
-  background-position-y: 80px;
+  background-size: 83.2vw;
+  background-position-x: 9vw;
+  background-position-y: 4vw;
 }
 
 #help .main-heading {
-  font-size: 86px;
+  font-size: 4.3vw;
+  margin-bottom: 5vw;
+}
+
+@media screen and (max-width: 767px) {
+  #help .main-heading {
+    font-size: 4.6vw;
+  }
 }
 
 #help .text {
   margin-right: 3rem;
 }
 
+@media screen and (max-width: 767px) {
+  #help .text {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+
 #help .text .heading {
-  font-size: 76px;
+  font-size: 3.95vw;
+}
+
+@media screen and (max-width: 767px) {
+  #help .text .heading {
+    font-size: 4.5vw;
+    text-align: center;
+  }
 }
 
 #help .text .para {
-  font-size: 35px;
-  margin-bottom: 3rem;
+  font-size: 1.55vw;
+  margin-bottom: 3vw;
+}
+
+@media screen and (max-width: 767px) {
+  #help .text .para {
+    font-size: 2.55vw;
+    text-align: center;
+  }
+}
+
+#help .img {
+  width: 124.5vw;
+}
+
+@media screen and (max-width: 767px) {
+  #help .img {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#help .img img {
+  width: 100%;
 }
 
 #help .btn {
-  width: 281px;
+  width: 16.6vw;
   display: block;
   text-align: center;
   margin-left: auto;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width: 767px) {
+  #help .btn {
+    margin-right: auto;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    width: 21.6vw;
+    font-size: 2vw;
+  }
 }
 
 #footer {
