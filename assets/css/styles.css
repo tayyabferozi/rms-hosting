@@ -409,6 +409,30 @@ hr {
   }
 }
 
+@media screen and (max-width: 767px) {
+  #main-slider .swiper-button-next {
+    right: 45px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #main-slider .swiper-button-next {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main-slider .swiper-button-prev {
+    left: 45px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #main-slider .swiper-button-prev {
+    left: 10px;
+  }
+}
+
 #main-slider .swiper-slide {
   position: relative;
   text-align: center;
@@ -974,8 +998,51 @@ hr {
   }
 }
 
-#tos #failure-renew .heading {
-  font-size: 4.6vw !important;
+@media screen and (min-width: 767px) {
+  #tos #failure-renew .heading {
+    font-size: 4.6vw !important;
+  }
+}
+
+#tos section {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#refund-policy {
+  background-image: url("../images/bg-service-refund-policy.png");
+  background-size: 70vw;
+  background-position-y: -3vw !important;
+}
+
+#vps-terms {
+  background-image: url("../images/bg-vps-terms.png");
+  background-size: 70vw;
+  background-position-y: -1vw !important;
+}
+
+#server-setup {
+  background-image: url("../images/bg-server-time.png");
+  background-size: 85vw;
+  background-position-y: 3vw !important;
+}
+
+#data-loss {
+  background-image: url("../images/bg-data-loss.png");
+  background-size: 82vw;
+  background-position-y: 0vw !important;
+}
+
+#copyright-policy {
+  background-image: url("../images/bg-copyright-policy.png");
+  background-size: 82vw;
+  background-position-y: 2vw !important;
+}
+
+#accounts {
+  background-image: url(../images/bg-account-security.png);
+  background-size: 81vw;
+  background-position-y: 2vw !important;
 }
 
 #hero.game-server {
