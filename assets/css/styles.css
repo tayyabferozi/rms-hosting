@@ -669,6 +669,12 @@ hr {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 1400px) {
+  #servers .heading::after {
+    right: 350px;
+  }
+}
+
 #servers img.dots-top-right {
   position: absolute;
   top: 0;
@@ -817,6 +823,12 @@ hr {
 #blogs .heading {
   margin-bottom: 0;
   padding-left: 10.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #blogs .heading::after {
+    right: 920px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -1226,6 +1238,18 @@ hr {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #tos #refund-policy .heading::after {
+    right: 370px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #vps-terms .heading::after {
+    left: 780px;
+  }
+}
+
 @media screen and (min-width: 767px) {
   #tos #failure-renew .heading {
     font-size: 4.6vw !important;
@@ -1238,9 +1262,46 @@ hr {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #tos #server-setup .heading::after {
+    left: 420px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #server-performance .heading::after {
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #data-loss .heading::after {
+    left: 790px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #copyright-policy .heading::after {
+    right: 540px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #accounts .heading::after {
+    left: 130px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #liability .heading::after {
+    right: 830px;
+  }
+}
+
 #tos section {
   background-repeat: no-repeat;
   background-position: center;
+  overflow: hidden;
 }
 
 #refund-policy {
@@ -1295,6 +1356,12 @@ hr {
 
 #game-servers .heading {
   margin-bottom: 1.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #game-servers .heading::after {
+    right: 650px;
+  }
 }
 
 #game-servers .dots-top-right {
@@ -1462,6 +1529,12 @@ hr {
 #reviews {
   position: relative;
   padding-top: 5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #reviews .heading::after {
+    right: 830px;
+  }
 }
 
 #reviews .vertical-line {
@@ -1860,6 +1933,12 @@ hr {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 1400px) {
+  #payment-plans .heading::after {
+    right: 610px;
+  }
+}
+
 #payment-plans .dots-top-right {
   position: absolute;
   right: 0;
@@ -2038,6 +2117,12 @@ hr {
 }
 
 @media screen and (min-width: 1400px) {
+  #know-fivem .heading::after {
+    right: 620px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   #know-fivem .img {
     width: 1120px;
     display: block;
@@ -2084,10 +2169,17 @@ hr {
 #locations.fivem-hosting {
   background: unset;
   padding-top: 3rem;
+  overflow: hidden;
 }
 
 #locations.fivem-hosting .heading {
   margin-bottom: 7rem;
+}
+
+@media screen and (min-width: 1400px) {
+  #locations.fivem-hosting .heading::after {
+    left: 530px;
+  }
 }
 
 #realms-hosting-panel.fivem-server {
@@ -2108,22 +2200,26 @@ hr {
   background-size: 83.2vw;
   background-position-x: 9vw;
   background-position-y: 4vw;
+  overflow: hidden;
 }
 
-#help .main-heading {
+#help .heading {
   font-size: 4.3vw;
   margin-bottom: 5vw;
 }
 
 @media screen and (min-width: 1400px) {
-  #help .main-heading {
+  #help .heading {
     font-size: 60px;
     margin-bottom: 5rem;
+  }
+  #help .heading::after {
+    left: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #help .main-heading {
+  #help .heading {
     font-size: 4.6vw;
   }
 }
@@ -2145,18 +2241,18 @@ hr {
   }
 }
 
-#help .text .heading {
+#help .text .sub-heading {
   font-size: 3.95vw;
 }
 
 @media screen and (min-width: 1400px) {
-  #help .text .heading {
+  #help .text .sub-heading {
     font-size: 55px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #help .text .heading {
+  #help .text .sub-heading {
     font-size: 4.5vw;
     text-align: center;
   }

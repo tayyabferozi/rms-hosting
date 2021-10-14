@@ -540,6 +540,12 @@ hr {
 
   .heading {
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 350px;
+      }
+    }
   }
 
   img.dots-top-right {
@@ -652,6 +658,12 @@ hr {
   .heading {
     margin-bottom: 0;
     padding-left: 10.5vw;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 920px;
+      }
+    }
   }
 
   #blog-slider-splide {
@@ -991,6 +1003,26 @@ hr {
     }
   }
 
+  #refund-policy {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          right: 370px;
+        }
+      }
+    }
+  }
+
+  #vps-terms {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          left: 780px;
+        }
+      }
+    }
+  }
+
   #failure-renew {
     .heading {
       @media screen and (min-width: 767px) {
@@ -1003,9 +1035,70 @@ hr {
     }
   }
 
+  #server-setup {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          left: 420px;
+        }
+      }
+    }
+  }
+
+  #server-performance {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  #data-loss {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          left: 790px;
+        }
+      }
+    }
+  }
+
+  #copyright-policy {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          right: 540px;
+        }
+      }
+    }
+  }
+
+  #accounts {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          left: 130px;
+        }
+      }
+    }
+  }
+
+  #liability {
+    .heading {
+      @media screen and (min-width: 1400px) {
+        &::after {
+          right: 830px;
+        }
+      }
+    }
+  }
+
   section {
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
   }
 }
 
@@ -1062,6 +1155,12 @@ hr {
 
   .heading {
     margin-bottom: 1.5vw;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 650px;
+      }
+    }
   }
 
   .dots-top-right {
@@ -1208,6 +1307,14 @@ hr {
 #reviews {
   position: relative;
   padding-top: 5vw;
+
+  .heading {
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 830px;
+      }
+    }
+  }
 
   .vertical-line {
     position: absolute;
@@ -1536,6 +1643,12 @@ hr {
 
   .heading {
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 610px;
+      }
+    }
   }
 
   .dots-top-right {
@@ -1696,6 +1809,12 @@ hr {
 
   .heading {
     margin-bottom: 4rem;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        right: 620px;
+      }
+    }
   }
 
   .img {
@@ -1738,9 +1857,16 @@ hr {
 #locations.fivem-hosting {
   background: unset;
   padding-top: 3rem;
+  overflow: hidden;
 
   .heading {
     margin-bottom: 7rem;
+
+    @media screen and (min-width: 1400px) {
+      &::after {
+        left: 530px;
+      }
+    }
   }
 }
 
@@ -1760,14 +1886,19 @@ hr {
   background-size: 83.2vw;
   background-position-x: 9vw;
   background-position-y: 4vw;
+  overflow: hidden;
 
-  .main-heading {
+  .heading {
     font-size: 4.3vw;
     margin-bottom: 5vw;
 
     @media screen and (min-width: 1400px) {
       font-size: 60px;
       margin-bottom: 5rem;
+
+      &::after {
+        left: 20px;
+      }
     }
 
     @media screen and (max-width: 767px) {
@@ -1789,7 +1920,7 @@ hr {
       margin-right: 0;
     }
 
-    .heading {
+    .sub-heading {
       font-size: 3.95vw;
 
       @media screen and (min-width: 1400px) {

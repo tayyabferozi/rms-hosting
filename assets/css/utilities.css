@@ -161,6 +161,7 @@
   margin-bottom: 5rem;
   border-bottom: 4px solid #fe7800;
   display: inline-block;
+  position: relative;
 }
 
 .heading-underlined.top h1 {
@@ -176,4 +177,46 @@
 .heading-underlined.start h1 {
   padding-left: var(--section-padding);
   margin-left: var(--align-margin);
+}
+
+@media screen and (min-width: 1400px) {
+  .heading-underlined .heading {
+    border: 0 !important;
+    width: 1120px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .heading-underlined .heading::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #fe7800;
+    width: 200%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .heading-underlined.top .heading::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background-color: #fe7800;
+    width: 200%;
+    bottom: 0;
+    right: 0;
+    bottom: unset;
+    top: 0;
+  }
+
+  .heading-underlined.end .heading {
+    text-align: right;
+  }
+
+  .heading-underlined.end .heading::after {
+    right: unset;
+  }
 }
