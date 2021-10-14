@@ -36,6 +36,7 @@ $primary-dark: #151515;
 
 body {
   background: $primary-dark;
+  padding-top: 118px;
 }
 
 #dark-overlay {
@@ -105,10 +106,23 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 4vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
   * {
     font-size: 1.4vw;
     font-weight: bold;
+  }
+
+  a {
+    transition: 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .logo {
@@ -502,6 +516,14 @@ hr {
     background-color: #fe7800;
   }
 
+  .logo {
+    transition: 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
   .content {
     max-width: 63vw;
     display: flex;
@@ -616,11 +638,15 @@ hr {
   }
 
   .cards-container {
-    .card {
+    .splide__slide {
       padding: 0 1rem;
+    }
+
+    .card {
       font-size: 36px;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
+      border-width: 2px;
 
       img {
         width: 100%;
@@ -1192,6 +1218,7 @@ hr {
         position: relative;
         border-bottom: 8px solid transparent;
         transition: 0.4s ease;
+        cursor: pointer;
 
         @media screen and (max-width: 767px) {
           font-size: 3.5vw;
@@ -1366,6 +1393,18 @@ hr {
           margin-right: auto;
           width: 125px;
           padding: 0.75rem 1.75rem;
+          transition: 0.4s ease;
+          &::after {
+            transition: 0.4s ease;
+          }
+
+          &:hover {
+            opacity: 0.9;
+
+            &::after {
+              border-color: #000;
+            }
+          }
 
           @media screen and (max-width: 1220px) {
             width: 110px;
@@ -1395,14 +1434,14 @@ hr {
     position: absolute;
     top: -1px;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
 
   .bottom-line {
     position: absolute;
     bottom: -1px;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -1536,6 +1575,14 @@ hr {
 #footer {
   position: relative;
   background-color: #000;
+
+  a {
+    transition: 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
   .line {
     position: absolute;

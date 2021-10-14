@@ -31,6 +31,7 @@
 
 body {
   background: #151515;
+  padding-top: 118px;
 }
 
 #dark-overlay {
@@ -116,11 +117,25 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 4vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 #navbar * {
   font-size: 1.4vw;
   font-weight: bold;
+}
+
+#navbar a {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#navbar a:hover {
+  opacity: 0.7;
 }
 
 #navbar .logo {
@@ -618,6 +633,16 @@ hr {
   background-color: #fe7800;
 }
 
+#fivem .logo {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#fivem .logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 #fivem .content {
   max-width: 63vw;
   display: -webkit-box;
@@ -760,11 +785,15 @@ hr {
   display: none;
 }
 
-#blogs .cards-container .card {
+#blogs .cards-container .splide__slide {
   padding: 0 1rem;
+}
+
+#blogs .cards-container .card {
   font-size: 36px;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
+  border-width: 2px;
 }
 
 #blogs .cards-container .card img {
@@ -1416,6 +1445,7 @@ hr {
   border-bottom: 8px solid transparent;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -1606,6 +1636,21 @@ hr {
   margin-right: auto;
   width: 125px;
   padding: 0.75rem 1.75rem;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#payment-plans .plans .plan .plan-body .btn::after {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#payment-plans .plans .plan .plan-body .btn:hover {
+  opacity: 0.9;
+}
+
+#payment-plans .plans .plan .plan-body .btn:hover::after {
+  border-color: #000;
 }
 
 @media screen and (max-width: 1220px) {
@@ -1636,14 +1681,14 @@ hr {
   position: absolute;
   top: -1px;
   left: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 #fivem.fivem-hosting .bottom-line {
   position: absolute;
   bottom: -1px;
   left: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 #know-fivem {
@@ -1794,6 +1839,15 @@ hr {
 #footer {
   position: relative;
   background-color: #000;
+}
+
+#footer a {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#footer a:hover {
+  opacity: 0.7;
 }
 
 #footer .line {
