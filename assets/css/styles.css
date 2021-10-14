@@ -55,6 +55,12 @@ h1 {
   font-size: 5.4vw;
 }
 
+@media screen and (min-width: 1400px) {
+  h1 {
+    font-size: 75.6px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 6.9vw;
@@ -69,6 +75,12 @@ h1 {
 
 h2 {
   font-size: 3.4vw;
+}
+
+@media screen and (min-width: 1400px) {
+  h2 {
+    font-size: 47.6px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -107,6 +119,18 @@ hr {
 
 #navbar {
   background: #000;
+  padding: 2rem 4vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+#navbar .wrapper {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,17 +140,17 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 4vw;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 2;
 }
 
 #navbar * {
   font-size: 1.4vw;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) {
+  #navbar * {
+    font-size: 19.6px;
+  }
 }
 
 #navbar a {
@@ -142,9 +166,9 @@ hr {
   width: 17.5vw;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1400px) {
   #navbar .logo {
-    width: 25vw;
+    width: 245px;
   }
 }
 
@@ -306,6 +330,12 @@ hr {
           flex-direction: column;
 }
 
+@media screen and (min-width: 1400px) {
+  #hero {
+    height: 700px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #hero {
     height: 80vw;
@@ -321,6 +351,12 @@ hr {
 #hero .main-heading {
   position: relative;
   font-size: 4.45vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #hero .main-heading {
+    font-size: 62.3px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -343,6 +379,12 @@ hr {
   height: 3px;
   background-color: #fe7800;
   width: 60%;
+}
+
+@media screen and (min-width: 1400px) {
+  #hero .main-heading::after {
+    bottom: 0.5rem;
+  }
 }
 
 #hero .sub-heading {
@@ -368,6 +410,13 @@ hr {
   font-size: 1.2vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #hero .btn {
+    width: 170.52px;
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #hero .btn {
     width: 10rem;
@@ -390,6 +439,13 @@ hr {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 2vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #hero .mouse {
+    width: 28px;
+    bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -487,6 +543,12 @@ hr {
   font-size: 4.65vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #main-slider .swiper-slide .main-heading {
+    font-size: 65.1px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #main-slider .swiper-slide .main-heading {
     font-size: 6vw;
@@ -503,6 +565,12 @@ hr {
   font-size: 1.9vw;
   margin-bottom: 1vw;
   font-weight: 500;
+}
+
+@media screen and (min-width: 1400px) {
+  #main-slider .swiper-slide .sub-heading {
+    font-size: 26.6px;
+  }
 }
 
 @media screen and (max-width: 940px) {
@@ -532,6 +600,12 @@ hr {
           align-items: center;
 }
 
+@media screen and (min-width: 1400px) {
+  #main-slider .swiper-slide .btns-container {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #main-slider .swiper-slide .btns-container {
     width: 32vw;
@@ -549,6 +623,13 @@ hr {
   font-size: 1.2vw;
   padding-left: 0;
   padding-right: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  #main-slider .swiper-slide .btns-container .btn {
+    width: 149.9px;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -608,15 +689,20 @@ hr {
   padding-bottom: 4vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #fivem {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #fivem {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -636,6 +722,12 @@ hr {
 #fivem .logo {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media screen and (min-width: 1400px) {
+  #fivem .logo {
+    margin-left: 2rem;
+  }
 }
 
 #fivem .logo:hover {
@@ -671,6 +763,13 @@ hr {
   text-align: right;
 }
 
+@media screen and (min-width: 1400px) {
+  #fivem .content .desc {
+    width: 882px;
+    font-size: 21px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #fivem .content .desc {
     text-align: center;
@@ -680,6 +779,12 @@ hr {
 
 #fivem .logo {
   max-width: 13vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #fivem .logo {
+    width: 182px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -706,6 +811,14 @@ hr {
 #blogs .heading {
   margin-bottom: 0;
   padding-left: 10.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #blogs #blog-slider-splide {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #blogs #blog-slider-splide .splide__arrow {
@@ -830,12 +943,25 @@ hr {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 1400px) {
+  #blogs .cards-container .card .body h3 {
+    font-size: 25.6px;
+  }
+}
+
 #blogs .cards-container .card .body .btn {
   font-size: 1.2vw;
   width: 9.7vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1400px) {
+  #blogs .cards-container .card .body .btn {
+    font-size: 18px;
+    width: 135.8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -891,6 +1017,19 @@ hr {
   padding-right: var(--section-padding);
 }
 
+@media screen and (min-width: 1400px) {
+  #games {
+    padding-top: 20vw;
+    padding-bottom: 10vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #games {
+    padding-bottom: 12vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #games {
     padding-top: 25vw;
@@ -898,9 +1037,25 @@ hr {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #games .heading,
+  #games .sub-heading,
+  #games .offer {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #games .heading {
   font-size: 9vw;
   line-height: 0.75;
+}
+
+@media screen and (min-width: 1400px) {
+  #games .heading {
+    font-size: 126px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -915,6 +1070,12 @@ hr {
   font-weight: 500;
   font-size: 2.55vw;
   text-align: right;
+}
+
+@media screen and (min-width: 1400px) {
+  #games .sub-heading {
+    font-size: 35.7px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -952,6 +1113,14 @@ hr {
   margin-right: 4vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #games .offer a {
+    width: 174.3px;
+    font-size: 18px;
+    margin-right: 56px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #games .offer a {
     width: 205px;
@@ -969,6 +1138,12 @@ hr {
 
 #games .offer .text {
   font-size: 5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #games .offer .text {
+    font-size: 70px;
+  }
 }
 
 #locations {
@@ -989,7 +1164,16 @@ hr {
 
 #locations .map {
   max-width: 1507px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   width: 100%;
+}
+
+@media screen and (min-width: 1400px) {
+  #locations .map {
+    max-width: 1120px;
+  }
 }
 
 #hero.tos {
@@ -1015,6 +1199,15 @@ hr {
   font-size: 1.825vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #tos p {
+    font-size: 25.55px;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #tos p {
     font-size: 1.9vw;
@@ -1030,6 +1223,12 @@ hr {
 @media screen and (min-width: 767px) {
   #tos #failure-renew .heading {
     font-size: 4.6vw !important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #tos #failure-renew .heading {
+    font-size: 64.4px;
   }
 }
 
@@ -1126,6 +1325,16 @@ hr {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #realms-hosting-panel .heading,
+  #realms-hosting-panel .sub-heading,
+  #realms-hosting-panel .showcase {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #realms-hosting-panel .heading {
   text-align: right;
   line-height: 0.7;
@@ -1135,6 +1344,12 @@ hr {
   text-align: right;
   font-size: 2.4vw;
   font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+  #realms-hosting-panel .sub-heading {
+    font-size: 33.6px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1163,6 +1378,12 @@ hr {
   width: 55.2vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #realms-hosting-panel .showcase .realm-hosting {
+    width: 772.8px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #realms-hosting-panel .showcase .realm-hosting {
     margin-bottom: 2rem;
@@ -1177,6 +1398,14 @@ hr {
   text-align: center;
   padding: 1.5vw 0;
   border-radius: 60px;
+}
+
+@media screen and (min-width: 1400px) {
+  #realms-hosting-panel .showcase .btn {
+    width: 238px;
+    font-size: 23px;
+    padding: 1.5rem 0;
+  }
 }
 
 @media screen and (min-width: 575px) {
@@ -1239,6 +1468,26 @@ hr {
   height: 83vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #reviews .vertical-line {
+    top: 355px;
+    border-width: 4px;
+    height: 1200px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #reviews .vertical-line {
+    height: 1290px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #reviews .vertical-line {
+    height: 1350px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #reviews .vertical-line {
     height: 91vw;
@@ -1293,6 +1542,12 @@ hr {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1400px) {
+  #reviews .reviews {
+    width: 854px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #reviews .reviews {
     max-width: 80vw;
@@ -1322,6 +1577,14 @@ hr {
   margin-left: auto;
   margin-top: 4.2vw;
   margin-bottom: 9.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #reviews .reviews .item {
+    width: 351.29px;
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1357,6 +1620,16 @@ hr {
   right: unset;
 }
 
+@media screen and (min-width: 1400px) {
+  #reviews .reviews .item::before {
+    width: 66px;
+    height: 66px;
+    left: -114px;
+    border-width: 5px;
+    outline-width: 2px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #reviews .reviews .item::before {
     left: -6.25vw;
@@ -1375,10 +1648,22 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1400px) {
+  #reviews .reviews .item:nth-child(2n + 1)::before {
+    right: -114px;
+  }
+}
+
 #reviews .reviews .item .name {
   font-size: 2.5vw;
   font-weight: 600;
   color: #fe7800;
+}
+
+@media screen and (min-width: 1400px) {
+  #reviews .reviews .item .name {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1399,6 +1684,12 @@ hr {
   color: #fe7800;
 }
 
+@media screen and (min-width: 1400px) {
+  #reviews .reviews .item .content {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #reviews .reviews .item .content {
     font-size: 1vw;
@@ -1414,6 +1705,12 @@ hr {
 #reviews .reviews .item .rating {
   margin-top: 0.5rem;
   width: 13.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #reviews .reviews .item .rating {
+    width: 189px;
+  }
 }
 
 #faq {
@@ -1433,6 +1730,14 @@ hr {
   margin-top: 3rem;
 }
 
+@media screen and (min-width: 1400px) {
+  #faq .qas {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #faq .qas .item {
   margin: 2rem 0 4rem;
 }
@@ -1448,6 +1753,13 @@ hr {
   cursor: pointer;
 }
 
+@media screen and (min-width: 1400px) {
+  #faq .qas .item .question {
+    font-size: 35px;
+    padding-right: 4rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #faq .qas .item .question {
     font-size: 3.5vw;
@@ -1461,6 +1773,12 @@ hr {
   transition: 0.4s ease;
   width: 3vw;
   top: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  #faq .qas .item .question .toggler {
+    width: 42px;
+  }
 }
 
 #faq .qas .item .question .toggler img {
@@ -1489,6 +1807,12 @@ hr {
   font-weight: 600;
   display: none;
   font-size: 1.095vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #faq .qas .item .answer {
+    font-size: 15.33px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1535,6 +1859,14 @@ hr {
   right: 0;
   top: 0;
   width: 8.3vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #payment-plans .plans {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #payment-plans .plans .plan {
@@ -1699,6 +2031,15 @@ hr {
   margin-bottom: 4rem;
 }
 
+@media screen and (min-width: 1400px) {
+  #know-fivem .img {
+    width: 1120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 #know-fivem .img img {
   width: 100%;
 }
@@ -1706,6 +2047,14 @@ hr {
 #know-fivem .text {
   font-size: 35px;
   padding: 1em 0 1rem;
+}
+
+@media screen and (min-width: 1400px) {
+  #know-fivem .text {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1760,10 +2109,23 @@ hr {
   margin-bottom: 5vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #help .main-heading {
+    font-size: 60px;
+    margin-bottom: 5rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #help .main-heading {
     font-size: 4.6vw;
   }
+}
+
+#help .we-are-here {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #help .text {
@@ -1781,6 +2143,12 @@ hr {
   font-size: 3.95vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #help .text .heading {
+    font-size: 55px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #help .text .heading {
     font-size: 4.5vw;
@@ -1793,6 +2161,12 @@ hr {
   margin-bottom: 3vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #help .text .para {
+    font-size: 22px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #help .text .para {
     font-size: 2.55vw;
@@ -1802,6 +2176,12 @@ hr {
 
 #help .img {
   width: 124.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #help .img {
+    width: 1745.44px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1826,6 +2206,13 @@ hr {
   font-size: 1.5vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #help .btn {
+    width: 232px;
+    font-size: 21px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #help .btn {
     margin-right: auto;
@@ -1839,6 +2226,14 @@ hr {
 #footer {
   position: relative;
   background-color: #000;
+}
+
+@media screen and (min-width: 1400px) {
+  #footer .wrapper {
+    width: 1135px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #footer a {
@@ -1887,6 +2282,12 @@ hr {
   font-size: 1.6vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #footer .navbar * {
+    font-size: 22.4px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #footer .navbar * {
     font-size: 1rem;
@@ -1895,6 +2296,12 @@ hr {
 
 #footer .navbar .logo {
   width: 17.5vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #footer .navbar .logo {
+    width: 245px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1946,6 +2353,12 @@ hr {
   font-size: 1.5vw;
 }
 
+@media screen and (min-width: 1400px) {
+  #footer .offer {
+    font-size: 21px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #footer .offer * {
     font-size: 1rem;
@@ -1954,6 +2367,12 @@ hr {
 
 #footer .offer img {
   width: 3.2vw;
+}
+
+@media screen and (min-width: 1400px) {
+  #footer .offer img {
+    width: 44.8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1965,6 +2384,12 @@ hr {
 #footer .copyright {
   font-size: 1.5vw;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1400px) {
+  #footer .copyright {
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 767px) {

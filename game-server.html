@@ -14,27 +14,11 @@
   <body>
     <div id="dark-overlay"></div>
     <nav id="navbar">
-      <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.png" alt="logo" />
-      </a>
-      <ul class="nav d-md-flex d-none">
-        <li><a href="./index.html">HOME</a></li>
-        <li class="active"><a href="./game-server.html">GAME SERVERS</a></li>
-        <li><a href="./fivem-server.html">VPS HOSTING</a></li>
-        <li><a href="#">KnowledgeBase</a></li>
-        <li><a href="#">STATUS</a></li>
-        <li><a href="#">BLOG</a></li>
-      </ul>
-      <a href="#" class="account d-md-flex d-none">
-        <img src="./assets/vectors/account-ico.svg" alt="account" /> MY ACCOUNT
-      </a>
-      <div class="hamburger d-md-none d-block">
-        <img src="./assets/images/hamburger.png" alt="hamburger" />
-      </div>
-
-      <div class="nav-sm">
-        <div id="close">&times;</div>
-        <ul class="nav">
+      <div class="wrapper">
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </a>
+        <ul class="nav d-md-flex d-none">
           <li><a href="./index.html">HOME</a></li>
           <li class="active"><a href="./game-server.html">GAME SERVERS</a></li>
           <li><a href="./fivem-server.html">VPS HOSTING</a></li>
@@ -42,6 +26,27 @@
           <li><a href="#">STATUS</a></li>
           <li><a href="#">BLOG</a></li>
         </ul>
+        <a href="#" class="account d-md-flex d-none">
+          <img src="./assets/vectors/account-ico.svg" alt="account" /> MY
+          ACCOUNT
+        </a>
+        <div class="hamburger d-md-none d-block">
+          <img src="./assets/images/hamburger.png" alt="hamburger" />
+        </div>
+
+        <div class="nav-sm">
+          <div id="close">&times;</div>
+          <ul class="nav">
+            <li><a href="./index.html">HOME</a></li>
+            <li class="active">
+              <a href="./game-server.html">GAME SERVERS</a>
+            </li>
+            <li><a href="./fivem-server.html">VPS HOSTING</a></li>
+            <li><a href="#">KnowledgeBase</a></li>
+            <li><a href="#">STATUS</a></li>
+            <li><a href="#">BLOG</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -342,32 +347,40 @@
     </main>
 
     <footer id="footer" class="pb-3 pt-5">
-      <img class="line" src="./assets/images/footer-clipped-path.psd" alt="" />
-      <div class="navbar">
-        <a class="logo" href="./index.html">
-          <img src="./assets/vectors/logo.svg" alt="logo" />
-        </a>
+      <div class="wrapper">
+        <img
+          class="line"
+          src="./assets/images/footer-clipped-path.psd"
+          alt=""
+        />
+        <div class="navbar">
+          <a class="logo" href="./index.html">
+            <img src="./assets/vectors/logo.svg" alt="logo" />
+          </a>
 
-        <div class="trustpilot">
-          <a class="text-primary" href="#">Trustpilot</a>
+          <div class="trustpilot">
+            <a class="text-primary" href="#">Trustpilot</a>
+          </div>
+
+          <ul class="nav d-flex justify-content-end align-items-center">
+            <li class="nav-item"><a href="./index.html">HOME</a></li>
+            <li class="nav-item"><a href="#">STATUS</a></li>
+            <li class="nav-item">
+              <a href="./tos.html">TERMS AND SERVICES</a>
+            </li>
+          </ul>
         </div>
 
-        <ul class="nav d-flex justify-content-end align-items-center">
-          <li class="nav-item"><a href="./index.html">HOME</a></li>
-          <li class="nav-item"><a href="#">STATUS</a></li>
-          <li class="nav-item"><a href="./tos.html">TERMS AND SERVICES</a></li>
-        </ul>
-      </div>
+        <div class="d-flex justify-content-between align-items-center offer">
+          <span>Get amazing cheap FiveM Server Hosting</span>
+          <a href="#">
+            <img src="./assets/vectors/facebook.svg" alt="facebook" />
+          </a>
+        </div>
 
-      <div class="d-flex justify-content-between align-items-center offer">
-        <span>Get amazing cheap FiveM Server Hosting</span>
-        <a href="#">
-          <img src="./assets/vectors/facebook.svg" alt="facebook" />
-        </a>
-      </div>
-
-      <div class="copyright text-primary text-center py-3">
-        &copy; 2021 Realms Hosting, All rights reserved
+        <div class="copyright text-primary text-center py-3">
+          &copy; 2021 Realms Hosting, All rights reserved
+        </div>
       </div>
     </footer>
     <script

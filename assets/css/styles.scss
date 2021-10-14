@@ -58,18 +58,25 @@ body {
 h1 {
   font-size: 5.4vw;
 
+  @media screen and (min-width: 1400px) {
+    font-size: 75.6px;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 6.9vw;
   }
 
   @media screen and (max-width: 575px) {
-    // font-size: 8.5vw;
     font-size: 12vw;
   }
 }
 
 h2 {
   font-size: 3.4vw;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 47.6px;
+  }
 
   @media screen and (max-width: 767px) {
     font-size: 5.5vw;
@@ -102,9 +109,6 @@ hr {
 
 #navbar {
   background: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 2rem 4vw;
   position: fixed;
   left: 0;
@@ -112,9 +116,22 @@ hr {
   right: 0;
   z-index: 2;
 
+  .wrapper {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   * {
     font-size: 1.4vw;
     font-weight: bold;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 19.6px;
+    }
   }
 
   a {
@@ -128,8 +145,8 @@ hr {
   .logo {
     width: 17.5vw;
 
-    @media screen and (max-width: 767px) {
-      width: 25vw;
+    @media screen and (min-width: 1400px) {
+      width: 245px;
     }
 
     @media screen and (max-width: 767px) {
@@ -259,6 +276,10 @@ hr {
   align-items: center;
   flex-direction: column;
 
+  @media screen and (min-width: 1400px) {
+    height: 700px;
+  }
+
   @media screen and (max-width: 767px) {
     height: 80vw;
   }
@@ -270,6 +291,10 @@ hr {
   .main-heading {
     position: relative;
     font-size: 4.45vw;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 62.3px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 8vw;
@@ -287,6 +312,10 @@ hr {
       height: 3px;
       background-color: $primary-color-text;
       width: 60%;
+
+      @media screen and (min-width: 1400px) {
+        bottom: 0.5rem;
+      }
     }
   }
 
@@ -308,6 +337,11 @@ hr {
     width: 12.18vw;
     font-size: 1.2vw;
 
+    @media screen and (min-width: 1400px) {
+      width: 170.52px;
+      font-size: 18px;
+    }
+
     @media screen and (max-width: 767px) {
       width: 10rem;
       padding: 1rem 0;
@@ -326,6 +360,11 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     bottom: 2vw;
+
+    @media screen and (min-width: 1400px) {
+      width: 28px;
+      bottom: 2rem;
+    }
 
     @media screen and (max-width: 767px) {
       width: 4vw;
@@ -402,6 +441,10 @@ hr {
     .main-heading {
       font-size: 4.65vw;
 
+      @media screen and (min-width: 1400px) {
+        font-size: 65.1px;
+      }
+
       @media screen and (max-width: 767px) {
         font-size: 6vw;
       }
@@ -417,6 +460,10 @@ hr {
       font-size: 1.9vw;
       margin-bottom: 1vw;
       font-weight: 500;
+
+      @media screen and (min-width: 1400px) {
+        font-size: 26.6px;
+      }
 
       @media screen and (max-width: 940px) {
         margin-top: -0.5rem;
@@ -435,6 +482,10 @@ hr {
       justify-content: space-between;
       align-items: center;
 
+      @media screen and (min-width: 1400px) {
+        width: 350px;
+      }
+
       @media screen and (max-width: 767px) {
         width: 32vw;
       }
@@ -448,6 +499,11 @@ hr {
         font-size: 1.2vw;
         padding-left: 0;
         padding-right: 0;
+
+        @media screen and (min-width: 1400px) {
+          width: 149.9px;
+          font-size: 18px;
+        }
 
         @media screen and (max-width: 767px) {
           width: 13.5vw;
@@ -500,9 +556,12 @@ hr {
   padding-top: 6vw;
   padding-bottom: 4vw;
 
+  @media screen and (min-width: 1400px) {
+    justify-content: center;
+  }
+
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
   }
 
@@ -518,6 +577,10 @@ hr {
 
   .logo {
     transition: 0.4s ease;
+
+    @media screen and (min-width: 1400px) {
+      margin-left: 2rem;
+    }
 
     &:hover {
       transform: scale(1.05);
@@ -540,6 +603,11 @@ hr {
       font-size: 1.5vw;
       text-align: right;
 
+      @media screen and (min-width: 1400px) {
+        width: 882px;
+        font-size: 21px;
+      }
+
       @media screen and (max-width: 767px) {
         text-align: center;
         font-size: 2.5vw;
@@ -549,6 +617,10 @@ hr {
 
   .logo {
     max-width: 13vw;
+
+    @media screen and (min-width: 1400px) {
+      width: 182px;
+    }
 
     @media screen and (max-width: 767px) {
       max-width: 21vw;
@@ -576,6 +648,12 @@ hr {
   }
 
   #blog-slider-splide {
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .splide__arrow {
       background-color: transparent;
       border: 0;
@@ -675,6 +753,10 @@ hr {
 
         h3 {
           margin-bottom: 1rem;
+
+          @media screen and (min-width: 1400px) {
+            font-size: 25.6px;
+          }
         }
 
         .btn {
@@ -683,6 +765,11 @@ hr {
           display: block;
           margin-left: auto;
           margin-right: auto;
+
+          @media screen and (min-width: 1400px) {
+            font-size: 18px;
+            width: 135.8px;
+          }
 
           @media screen and (max-width: 767px) {
             width: 18vw;
@@ -733,14 +820,37 @@ hr {
   padding-left: var(--section-padding);
   padding-right: var(--section-padding);
 
+  @media screen and (min-width: 1400px) {
+    padding-top: 20vw;
+    padding-bottom: 10vw;
+  }
+
+  @media screen and (min-width: 1920px) {
+    padding-bottom: 12vw;
+  }
+
   @media screen and (max-width: 767px) {
     padding-top: 25vw;
     padding-bottom: 15vw;
   }
 
+  .heading,
+  .sub-heading,
+  .offer {
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .heading {
     font-size: 9vw;
     line-height: 0.75;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 126px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 10vw;
@@ -753,6 +863,10 @@ hr {
     font-weight: 500;
     font-size: 2.55vw;
     text-align: right;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 35.7px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 4.8vw;
@@ -775,6 +889,12 @@ hr {
       font-size: 1.3vw;
       margin-right: 4vw;
 
+      @media screen and (min-width: 1400px) {
+        width: 174.3px;
+        font-size: 18px;
+        margin-right: 56px;
+      }
+
       @media screen and (max-width: 767px) {
         width: 205px;
         padding: 1rem 0;
@@ -789,6 +909,10 @@ hr {
 
     .text {
       font-size: 5vw;
+
+      @media screen and (min-width: 1400px) {
+        font-size: 70px;
+      }
     }
   }
 }
@@ -810,7 +934,14 @@ hr {
 
   .map {
     max-width: 1507px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 100%;
+
+    @media screen and (min-width: 1400px) {
+      max-width: 1120px;
+    }
   }
 }
 
@@ -837,6 +968,13 @@ hr {
     font-weight: 600;
     font-size: 1.825vw;
 
+    @media screen and (min-width: 1400px) {
+      font-size: 25.55px;
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     @media screen and (max-width: 767px) {
       font-size: 1.9vw;
     }
@@ -850,6 +988,10 @@ hr {
     .heading {
       @media screen and (min-width: 767px) {
         font-size: 4.6vw !important;
+      }
+
+      @media screen and (min-width: 1400px) {
+        font-size: 64.4px;
       }
     }
   }
@@ -947,6 +1089,16 @@ hr {
     padding-bottom: 17vw;
   }
 
+  .heading,
+  .sub-heading,
+  .showcase {
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .heading {
     text-align: right;
     line-height: 0.7;
@@ -956,6 +1108,10 @@ hr {
     text-align: right;
     font-size: 2.4vw;
     font-weight: 500;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 33.6px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 3.1vw;
@@ -978,6 +1134,10 @@ hr {
     .realm-hosting {
       width: 55.2vw;
 
+      @media screen and (min-width: 1400px) {
+        width: 772.8px;
+      }
+
       @media screen and (max-width: 767px) {
         margin-bottom: 2rem;
         width: 80vw;
@@ -991,6 +1151,12 @@ hr {
       text-align: center;
       padding: 1.5vw 0;
       border-radius: 60px;
+
+      @media screen and (min-width: 1400px) {
+        width: 238px;
+        font-size: 23px;
+        padding: 1.5rem 0;
+      }
 
       @media screen and (min-width: 575px) {
         margin-bottom: 2.8vw;
@@ -1045,6 +1211,20 @@ hr {
     border-left: 0.3vw dashed #fe7800;
     height: 83vw;
 
+    @media screen and (min-width: 1400px) {
+      top: 355px;
+      border-width: 4px;
+      height: 1200px;
+    }
+
+    @media screen and (min-width: 1800px) {
+      height: 1290px;
+    }
+
+    @media screen and (min-width: 2000px) {
+      height: 1350px;
+    }
+
     @media screen and (max-width: 1200px) {
       height: 91vw;
       top: 28vw;
@@ -1087,6 +1267,10 @@ hr {
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: 1400px) {
+      width: 854px;
+    }
+
     @media screen and (max-width: 1200px) {
       max-width: 80vw;
     }
@@ -1110,6 +1294,12 @@ hr {
       margin-left: auto;
       margin-top: 4.2vw;
       margin-bottom: 9.5vw;
+
+      @media screen and (min-width: 1400px) {
+        width: 351.29px;
+        margin-top: 4rem;
+        margin-bottom: 9rem;
+      }
 
       @media screen and (max-width: 1200px) {
         max-width: 34.5vw;
@@ -1139,6 +1329,14 @@ hr {
         left: -8.25vw;
         right: unset;
 
+        @media screen and (min-width: 1400px) {
+          width: 66px;
+          height: 66px;
+          left: -114px;
+          border-width: 5px;
+          outline-width: 2px;
+        }
+
         @media screen and (max-width: 767px) {
           left: -6.25vw;
         }
@@ -1153,6 +1351,10 @@ hr {
           &::before {
             right: -8.25vw;
             left: unset;
+
+            @media screen and (min-width: 1400px) {
+              right: -114px;
+            }
           }
         }
       }
@@ -1161,6 +1363,10 @@ hr {
         font-size: 2.5vw;
         font-weight: 600;
         color: $primary-color-text;
+
+        @media screen and (min-width: 1400px) {
+          font-size: 35px;
+        }
 
         @media screen and (max-width: 1200px) {
           font-size: 3.5vw;
@@ -1176,6 +1382,10 @@ hr {
         font-size: 0.85vw;
         color: $primary-color-text;
 
+        @media screen and (min-width: 1400px) {
+          font-size: 12px;
+        }
+
         @media screen and (max-width: 1200px) {
           font-size: 1vw;
         }
@@ -1188,6 +1398,10 @@ hr {
       .rating {
         margin-top: 0.5rem;
         width: 13.5vw;
+
+        @media screen and (min-width: 1400px) {
+          width: 189px;
+        }
       }
     }
   }
@@ -1208,6 +1422,12 @@ hr {
   .qas {
     margin-top: 3rem;
 
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .item {
       margin: 2rem 0 4rem;
 
@@ -1220,6 +1440,11 @@ hr {
         transition: 0.4s ease;
         cursor: pointer;
 
+        @media screen and (min-width: 1400px) {
+          font-size: 35px;
+          padding-right: 4rem;
+        }
+
         @media screen and (max-width: 767px) {
           font-size: 3.5vw;
         }
@@ -1230,6 +1455,10 @@ hr {
           transition: 0.4s ease;
           width: 3vw;
           top: 0;
+
+          @media screen and (min-width: 1400px) {
+            width: 42px;
+          }
 
           img {
             width: 100%;
@@ -1257,6 +1486,10 @@ hr {
         font-weight: 600;
         display: none;
         font-size: 1.095vw;
+
+        @media screen and (min-width: 1400px) {
+          font-size: 15.33px;
+        }
 
         @media screen and (max-width: 767px) {
           padding: 1.5rem;
@@ -1306,6 +1539,12 @@ hr {
   }
 
   .plans {
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .plan {
       position: relative;
       margin-top: 5rem;
@@ -1453,6 +1692,13 @@ hr {
   }
 
   .img {
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     img {
       width: 100%;
     }
@@ -1461,6 +1707,12 @@ hr {
   .text {
     font-size: 35px;
     padding: 1em 0 1rem;
+
+    @media screen and (min-width: 1400px) {
+      width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     @media screen and (max-width: 1200px) {
       font-size: 24px;
@@ -1506,9 +1758,20 @@ hr {
     font-size: 4.3vw;
     margin-bottom: 5vw;
 
+    @media screen and (min-width: 1400px) {
+      font-size: 60px;
+      margin-bottom: 5rem;
+    }
+
     @media screen and (max-width: 767px) {
       font-size: 4.6vw;
     }
+  }
+
+  .we-are-here {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .text {
@@ -1522,6 +1785,10 @@ hr {
     .heading {
       font-size: 3.95vw;
 
+      @media screen and (min-width: 1400px) {
+        font-size: 55px;
+      }
+
       @media screen and (max-width: 767px) {
         font-size: 4.5vw;
         text-align: center;
@@ -1532,6 +1799,10 @@ hr {
       font-size: 1.55vw;
       margin-bottom: 3vw;
 
+      @media screen and (min-width: 1400px) {
+        font-size: 22px;
+      }
+
       @media screen and (max-width: 767px) {
         font-size: 2.55vw;
         text-align: center;
@@ -1541,6 +1812,10 @@ hr {
 
   .img {
     width: 124.5vw;
+
+    @media screen and (min-width: 1400px) {
+      width: 1745.44px;
+    }
 
     @media screen and (max-width: 767px) {
       width: 50vw;
@@ -1562,6 +1837,11 @@ hr {
     padding-bottom: 1.25rem;
     font-size: 1.5vw;
 
+    @media screen and (min-width: 1400px) {
+      width: 232px;
+      font-size: 21px;
+    }
+
     @media screen and (max-width: 767px) {
       margin-right: auto;
       padding: 1rem 0;
@@ -1575,6 +1855,14 @@ hr {
 #footer {
   position: relative;
   background-color: #000;
+
+  .wrapper {
+    @media screen and (min-width: 1400px) {
+      width: 1135px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
   a {
     transition: 0.4s ease;
@@ -1606,6 +1894,10 @@ hr {
     * {
       font-size: 1.6vw;
 
+      @media screen and (min-width: 1400px) {
+        font-size: 22.4px;
+      }
+
       @media screen and (max-width: 767px) {
         font-size: 1rem;
       }
@@ -1613,6 +1905,10 @@ hr {
 
     .logo {
       width: 17.5vw;
+
+      @media screen and (min-width: 1400px) {
+        width: 245px;
+      }
 
       @media screen and (max-width: 767px) {
         width: 25vw;
@@ -1653,6 +1949,10 @@ hr {
   .offer {
     font-size: 1.5vw;
 
+    @media screen and (min-width: 1400px) {
+      font-size: 21px;
+    }
+
     * {
       @media screen and (max-width: 767px) {
         font-size: 1rem;
@@ -1661,6 +1961,10 @@ hr {
 
     img {
       width: 3.2vw;
+
+      @media screen and (min-width: 1400px) {
+        width: 44.8px;
+      }
 
       @media screen and (max-width: 767px) {
         width: 2rem;
@@ -1671,6 +1975,10 @@ hr {
   .copyright {
     font-size: 1.5vw;
     font-weight: bold;
+
+    @media screen and (min-width: 1400px) {
+      font-size: 21px;
+    }
 
     @media screen and (max-width: 767px) {
       font-size: 1rem;
