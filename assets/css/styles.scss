@@ -180,6 +180,13 @@ hr {
         left: 50%;
         transform: translateX(-50%);
         background: $primary-color-text;
+        transition: 0.4s ease;
+      }
+
+      &:hover {
+        &.active::after {
+          width: 160%;
+        }
       }
     }
   }

@@ -215,6 +215,12 @@ hr {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background: #fe7800;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+#navbar .nav li:hover.active::after {
+  width: 160%;
 }
 
 #navbar .account {
