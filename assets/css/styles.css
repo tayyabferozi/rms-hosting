@@ -1447,21 +1447,30 @@ hr {
   }
 }
 
-#realms-hosting-panel .showcase .realm-hosting {
+#realms-hosting-panel .showcase .img-wrap {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-radius: 55px;
   width: 55.2vw;
 }
 
 @media screen and (min-width: 1400px) {
-  #realms-hosting-panel .showcase .realm-hosting {
+  #realms-hosting-panel .showcase .img-wrap {
     width: 772.8px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #realms-hosting-panel .showcase .realm-hosting {
+  #realms-hosting-panel .showcase .img-wrap {
     margin-bottom: 2rem;
     width: 80vw;
   }
+}
+
+#realms-hosting-panel .showcase .img-wrap img {
+  border-radius: 50px;
+  width: 100%;
 }
 
 #realms-hosting-panel .showcase .btn {
@@ -2224,10 +2233,12 @@ hr {
   }
 }
 
-#help .we-are-here {
-  width: 1120px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1400px) {
+  #help .we-are-here {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #help .text {

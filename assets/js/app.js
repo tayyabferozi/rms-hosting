@@ -6,3 +6,9 @@ function toggleSideNav() {
 }
 
 $(".hamburger, #dark-overlay, #close").click(toggleSideNav);
+
+$("#realms-hosting-panel .btn").click(function () {
+  $("#realms-hosting-panel .btn").removeClass("bg-black");
+  $(this).addClass("bg-black");
+  $(".feature-img").attr("src", $(this).attr("data-img-name"));
+});

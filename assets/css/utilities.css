@@ -2,6 +2,10 @@
   color: #ff7e00 !important;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .btn.outlined {
   position: relative;
   color: #d86b00;
